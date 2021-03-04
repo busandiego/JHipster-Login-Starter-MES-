@@ -1,0 +1,25 @@
+{
+  "hotelgaServerApp": {
+    "investmentCommissionSetting": {
+      "home": {
+        "title": "Investment Commission Settings",
+        "createLabel": "Create a new Investment Commission Setting",
+        "createOrEditLabel": "Create or edit a Investment Commission Setting",
+        "notFound": "No Investment Commission Settings found"
+      },
+      "created": "A new Investment Commission Setting is created with identifier {{ param }}",
+      "updated": "A Investment Commission Setting is updated with identifier {{ param }}",
+      "deleted": "A Investment Commission Setting is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Investment Commission Setting {{ id }}?"
+      },
+      "detail": {
+        "title": "Investment Commission Setting"
+      },
+      "commissionPer": "Commission Per",
+      "settingDt": "Setting Dt",
+      "settingUser": "Setting User",
+      "applyUser": "Apply User"
+    }
+  }
+}

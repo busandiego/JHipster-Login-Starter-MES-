@@ -1,0 +1,30 @@
+{
+  "hotelgaServerApp": {
+    "reviewRoom": {
+      "home": {
+        "title": "Review Rooms",
+        "createLabel": "Create a new Review Room",
+        "createOrEditLabel": "Create or edit a Review Room",
+        "notFound": "No Review Rooms found"
+      },
+      "created": "A new Review Room is created with identifier {{ param }}",
+      "updated": "A Review Room is updated with identifier {{ param }}",
+      "deleted": "A Review Room is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Review Room {{ id }}?"
+      },
+      "detail": {
+        "title": "Review Room"
+      },
+      "reviewScore": "Review Score",
+      "reviewTitle": "Review Title",
+      "reviewContents": "Review Contents",
+      "reviewCreateDt": "Review Create Dt",
+      "reviewUpdateDt": "Review Update Dt",
+      "reviewState": "Review State",
+      "reviewResponse": "Review Response",
+      "rooms": "Rooms",
+      "hoMember": "Ho Member"
+    }
+  }
+}

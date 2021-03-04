@@ -1,0 +1,38 @@
+{
+  "hotelgaServerApp": {
+    "coupon": {
+      "home": {
+        "title": "Coupons",
+        "createLabel": "Create a new Coupon",
+        "createOrEditLabel": "Create or edit a Coupon",
+        "notFound": "No Coupons found"
+      },
+      "created": "A new Coupon is created with identifier {{ param }}",
+      "updated": "A Coupon is updated with identifier {{ param }}",
+      "deleted": "A Coupon is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Coupon {{ id }}?"
+      },
+      "detail": {
+        "title": "Coupon"
+      },
+      "couponName": "Coupon Name",
+      "couponType": "Coupon Type",
+      "couponAllUse": "Coupon All Use",
+      "couponUseAffiliateId": "Coupon Use Affiliate Id",
+      "couponAmountType": "Coupon Amount Type",
+      "couponDuplication": "Coupon Duplication",
+      "couponAutoPublish": "Coupon Auto Publish",
+      "couponUseTypeLimit": "Coupon Use Type Limit",
+      "couponUseType": "Coupon Use Type",
+      "couponUsePriceLimit": "Coupon Use Price Limit",
+      "couponUsePrice": "Coupon Use Price",
+      "couponUseExpireLimit": "Coupon Use Expire Limit",
+      "couponUseExpireMonth": "Coupon Use Expire Month",
+      "couponCreateDt": "Coupon Create Dt",
+      "couponUpdateDt": "Coupon Update Dt",
+      "couponCurrentPublishedDt": "Coupon Current Published Dt",
+      "couponState": "Coupon State"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "hotelgaServerApp": {
+    "faqBoard": {
+      "home": {
+        "title": "Faq Boards",
+        "createLabel": "Create a new Faq Board",
+        "createOrEditLabel": "Create or edit a Faq Board",
+        "notFound": "No Faq Boards found"
+      },
+      "created": "A new Faq Board is created with identifier {{ param }}",
+      "updated": "A Faq Board is updated with identifier {{ param }}",
+      "deleted": "A Faq Board is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Faq Board {{ id }}?"
+      },
+      "detail": {
+        "title": "Faq Board"
+      },
+      "faqContents": "Faq Contents",
+      "faqAnswer": "Faq Answer",
+      "faqCreateDt": "Faq Create Dt",
+      "faqUpdateDt": "Faq Update Dt",
+      "faqType": "Faq Type",
+      "adminUser": "Admin User"
+    }
+  }
+}

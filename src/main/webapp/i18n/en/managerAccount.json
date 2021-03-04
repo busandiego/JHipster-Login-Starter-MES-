@@ -1,0 +1,28 @@
+{
+  "hotelgaServerApp": {
+    "managerAccount": {
+      "home": {
+        "title": "Manager Accounts",
+        "createLabel": "Create a new Manager Account",
+        "createOrEditLabel": "Create or edit a Manager Account",
+        "notFound": "No Manager Accounts found"
+      },
+      "created": "A new Manager Account is created with identifier {{ param }}",
+      "updated": "A Manager Account is updated with identifier {{ param }}",
+      "deleted": "A Manager Account is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Manager Account {{ id }}?"
+      },
+      "detail": {
+        "title": "Manager Account"
+      },
+      "managerAccountNum": "Manager Account Num",
+      "managerAccountBank": "Manager Account Bank",
+      "managerAccountOnwer": "Manager Account Onwer",
+      "managerAccountApplyDt": "Manager Account Apply Dt",
+      "managerAccountDecideDt": "Manager Account Decide Dt",
+      "managerAccountState": "Manager Account State",
+      "manager": "Manager"
+    }
+  }
+}

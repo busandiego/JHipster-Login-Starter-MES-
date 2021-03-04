@@ -1,0 +1,26 @@
+{
+  "hotelgaServerApp": {
+    "affiliateCommissionSetting": {
+      "home": {
+        "title": "Affiliate Commission Settings",
+        "createLabel": "Create a new Affiliate Commission Setting",
+        "createOrEditLabel": "Create or edit a Affiliate Commission Setting",
+        "notFound": "No Affiliate Commission Settings found"
+      },
+      "created": "A new Affiliate Commission Setting is created with identifier {{ param }}",
+      "updated": "A Affiliate Commission Setting is updated with identifier {{ param }}",
+      "deleted": "A Affiliate Commission Setting is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Affiliate Commission Setting {{ id }}?"
+      },
+      "detail": {
+        "title": "Affiliate Commission Setting"
+      },
+      "commissionPerMin": "Commission Per Min",
+      "commissionPerMax": "Commission Per Max",
+      "settingDt": "Setting Dt",
+      "adminUser": "Admin User",
+      "affiliate": "Affiliate"
+    }
+  }
+}

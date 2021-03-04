@@ -1,0 +1,11 @@
+{
+  "hotelgaServerApp": {
+    "AmenityType": {
+      "null": "",
+      "KARAOKE": "KARAOKE",
+      "PC": "PC",
+      "CONVENIENCE": "CONVENIENCE",
+      "ATM": "ATM"
+    }
+  }
+}

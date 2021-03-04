@@ -1,0 +1,23 @@
+{
+  "hotelgaServerApp": {
+    "adminUserAuth": {
+      "home": {
+        "title": "Admin User Auths",
+        "createLabel": "Create a new Admin User Auth",
+        "createOrEditLabel": "Create or edit a Admin User Auth",
+        "notFound": "No Admin User Auths found"
+      },
+      "created": "A new Admin User Auth is created with identifier {{ param }}",
+      "updated": "A Admin User Auth is updated with identifier {{ param }}",
+      "deleted": "A Admin User Auth is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Admin User Auth {{ id }}?"
+      },
+      "detail": {
+        "title": "Admin User Auth"
+      },
+      "authorityType": "Authority Type",
+      "adminUser": "Admin User"
+    }
+  }
+}

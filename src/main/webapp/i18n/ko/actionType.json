@@ -1,0 +1,16 @@
+{
+  "hotelgaServerApp": {
+    "ActionType": {
+      "null": "",
+      "AUTH": "AUTH",
+      "ACCOUNT": "ACCOUNT",
+      "PARTNER": "PARTNER",
+      "MAKETING": "MAKETING",
+      "ACCOMMODATION": "ACCOMMODATION",
+      "SELLING": "SELLING",
+      "BALANCE": "BALANCE",
+      "CS": "CS",
+      "SETTING": "SETTING"
+    }
+  }
+}

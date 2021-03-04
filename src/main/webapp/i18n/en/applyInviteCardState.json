@@ -1,0 +1,10 @@
+{
+  "hotelgaServerApp": {
+    "ApplyInviteCardState": {
+      "null": "",
+      "APPROVE": "APPROVE",
+      "DELETE": "DELETE",
+      "WAITING": "WAITING"
+    }
+  }
+}

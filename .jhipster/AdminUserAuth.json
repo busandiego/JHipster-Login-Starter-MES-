@@ -1,0 +1,32 @@
+{
+    "name": "AdminUserAuth",
+    "fields": [
+        {
+            "fieldName": "authorityType",
+            "fieldType": "AuthorityType",
+            "fieldValues": "ACCOUNT,CALCULATE,ACCOMMODATION,AFFILIATE,CUSTOMERSERVICE,MAINTENANCE",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "adminUser",
+            "otherEntityRelationshipName": "adminUserAuth",
+            "relationshipName": "adminUser",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200110051342",
+    "entityTableName": "admin_user_auth",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

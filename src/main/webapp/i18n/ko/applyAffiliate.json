@@ -1,0 +1,27 @@
+{
+  "hotelgaServerApp": {
+    "applyAffiliate": {
+      "home": {
+        "title": "Apply Affiliates",
+        "createLabel": "Create a new Apply Affiliate",
+        "createOrEditLabel": "Create or edit a Apply Affiliate",
+        "notFound": "No Apply Affiliates found"
+      },
+      "created": "A new Apply Affiliate is created with identifier {{ param }}",
+      "updated": "A Apply Affiliate is updated with identifier {{ param }}",
+      "deleted": "A Apply Affiliate is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Apply Affiliate {{ id }}?"
+      },
+      "detail": {
+        "title": "Apply Affiliate"
+      },
+      "affiliateName": "Affiliate Name",
+      "applyName": "Apply Name",
+      "affiliateAddress": "Affiliate Address",
+      "affiliateNum": "Affiliate Num",
+      "applyDt": "Apply Dt",
+      "applyAffiliateState": "Apply Affiliate State"
+    }
+  }
+}

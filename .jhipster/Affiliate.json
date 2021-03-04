@@ -1,0 +1,143 @@
+{
+    "name": "Affiliate",
+    "fields": [
+        {
+            "fieldName": "affiliateName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "affiliateRegNum",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "affiliateOwner",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "affiliateBank",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "affiliateAccount",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "affiliateAccountHolder",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "affiliateMemo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "affiliateAddress",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "affiliateRegDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "affiliateUpdateDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "affiliateCommissionPer",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "affiliateState",
+            "fieldType": "StateAffiliate",
+            "fieldValues": "NORMAL,ABNORMAL,DELETE"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "adminUser",
+            "otherEntityRelationshipName": "affiliate",
+            "relationshipName": "adminUser",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "managerWorkHistories",
+            "otherEntityRelationshipName": "affiliate",
+            "relationshipName": "managerWorkHistories"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "callAffiliate",
+            "otherEntityRelationshipName": "affiliate",
+            "relationshipName": "callAffiliate"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "accommodation",
+            "otherEntityRelationshipName": "affiliate",
+            "relationshipName": "accommodation"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "coupon",
+            "otherEntityRelationshipName": "affiliate",
+            "relationshipName": "coupon"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "affiliateCommissionSetting",
+            "otherEntityRelationshipName": "affiliate",
+            "relationshipName": "affiliateCommissionSetting"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "mileageSetting",
+            "otherEntityRelationshipName": "affiliate",
+            "relationshipName": "mileageSetting"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "totalBalanceTime",
+            "otherEntityRelationshipName": "affiliate",
+            "relationshipName": "totalBalanceTime"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "affiliateAdmin",
+            "otherEntityRelationshipName": "affiliate",
+            "relationshipName": "affiliateAdmin"
+        }
+    ],
+    "changelogDate": "20200109045634",
+    "entityTableName": "affiliate",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

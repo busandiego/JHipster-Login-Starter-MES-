@@ -1,0 +1,56 @@
+{
+    "name": "AdminHistories",
+    "fields": [
+        {
+            "fieldName": "actionType",
+            "fieldType": "ActionType",
+            "fieldValues": "AUTH,ACCOUNT,PARTNER,MAKETING,ACCOMMODATION,SELLING,BALANCE,CS,SETTING"
+        },
+        {
+            "fieldName": "actionLoginId",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "actionNum",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "contents",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "accessIp",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "createDt",
+            "fieldType": "ZonedDateTime",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200114085628",
+    "entityTableName": "admin_histories",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

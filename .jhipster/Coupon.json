@@ -1,0 +1,95 @@
+{
+  "name": "Coupon",
+  "fields": [
+    {
+      "fieldName": "couponName",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "couponType",
+      "fieldType": "CouponType",
+      "fieldValues": "AFFILIATECOUPON,ABSOLUTECOUPON",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "couponAllUse",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "couponUseAffiliateId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "couponAmountType",
+      "fieldType": "CouponAmountType",
+      "fieldValues": "ONETHOUSAND,THREETHOUSAND,FIVETHOUSAND,SEVENTHOUSAND,TENTHOUSAND"
+    },
+    {
+      "fieldName": "couponDuplication",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "couponAutoPublish",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "couponUseTypeLimit",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "couponUseType",
+      "fieldType": "CouponUseType",
+      "fieldValues": "DAYUSE,FULLRENT,RELAYRENT"
+    },
+    {
+      "fieldName": "couponUsePriceLimit",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "couponUsePrice",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "couponUseExpireLimit",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "couponUseExpireMonth",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "couponCreateDt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "couponUpdateDt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "couponCurrentPublishedDt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "couponState",
+      "fieldType": "StateCoupon",
+      "fieldValues": "NORMAL,ABNORMAL,DELETE",
+      "fieldValidateRules": [
+        "required"
+      ]
+    }
+  ],
+  "entityTableName": "coupon",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

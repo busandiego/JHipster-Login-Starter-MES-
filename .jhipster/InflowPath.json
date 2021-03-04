@@ -1,0 +1,45 @@
+{
+    "name": "InflowPath",
+    "fields": [
+        {
+            "fieldName": "inflowPathName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "codeName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "updateDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "inflowPathState",
+            "fieldType": "StateInflow",
+            "fieldValues": "NORMAL,ABNORMAL,DELETE"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "adminUser",
+            "otherEntityRelationshipName": "inflowPath",
+            "relationshipName": "adminUser",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200114064921",
+    "entityTableName": "inflow_path",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

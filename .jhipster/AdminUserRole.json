@@ -1,0 +1,32 @@
+{
+    "name": "AdminUserRole",
+    "fields": [
+        {
+            "fieldName": "roleType",
+            "fieldType": "RoleType",
+            "fieldValues": "SYSTEM,BUSINESS,CS,HR,CONTRACT,ACCOUNTING",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "adminUser",
+            "otherEntityRelationshipName": "adminUserRole",
+            "relationshipName": "adminUser",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200110051341",
+    "entityTableName": "admin_user_role",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

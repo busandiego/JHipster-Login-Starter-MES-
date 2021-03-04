@@ -1,0 +1,11 @@
+{
+  "hotelgaServerApp": {
+    "AuthMember": {
+      "null": "",
+      "GUEST": "GUEST",
+      "NORMAL": "NORMAL",
+      "VIP": "VIP",
+      "VVIP": "VVIP"
+    }
+  }
+}

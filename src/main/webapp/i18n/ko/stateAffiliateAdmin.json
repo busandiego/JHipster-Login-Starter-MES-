@@ -1,0 +1,10 @@
+{
+  "hotelgaServerApp": {
+    "StateAffiliateAdmin": {
+      "null": "",
+      "NORMAL": "NORMAL",
+      "ABNORMAL": "ABNORMAL",
+      "DELETE": "DELETE"
+    }
+  }
+}

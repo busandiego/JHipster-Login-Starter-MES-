@@ -1,0 +1,10 @@
+{
+  "hotelgaServerApp": {
+    "CouponUseType": {
+      "null": "",
+      "DAYUSE": "DAYUSE",
+      "FULLRENT": "FULLRENT",
+      "RELAYRENT": "RELAYRENT"
+    }
+  }
+}

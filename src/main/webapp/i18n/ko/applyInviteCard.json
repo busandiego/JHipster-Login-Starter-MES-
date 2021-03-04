@@ -1,0 +1,30 @@
+{
+  "hotelgaServerApp": {
+    "applyInviteCard": {
+      "home": {
+        "title": "Apply Invite Cards",
+        "createLabel": "Create a new Apply Invite Card",
+        "createOrEditLabel": "Create or edit a Apply Invite Card",
+        "notFound": "No Apply Invite Cards found"
+      },
+      "created": "A new Apply Invite Card is created with identifier {{ param }}",
+      "updated": "A Apply Invite Card is updated with identifier {{ param }}",
+      "deleted": "A Apply Invite Card is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Apply Invite Card {{ id }}?"
+      },
+      "detail": {
+        "title": "Apply Invite Card"
+      },
+      "inviteName": "Invite Name",
+      "applyCardDt": "Apply Card Dt",
+      "managerName": "Manager Name",
+      "accommodationName": "Accommodation Name",
+      "managerPhoneNum": "Manager Phone Num",
+      "applyAmountNum": "Apply Amount Num",
+      "managerId": "Manager Id",
+      "accommodationId": "Accommodation Id",
+      "applyInviteCardState": "Apply Invite Card State"
+    }
+  }
+}

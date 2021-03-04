@@ -1,0 +1,52 @@
+{
+    "name": "Comment",
+    "fields": [
+        {
+            "fieldName": "contents",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "createDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "updateDt",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "comment",
+            "otherEntityRelationshipName": "commentForComment",
+            "relationshipName": "commentForComment"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "boardDetails",
+            "otherEntityRelationshipName": "comment",
+            "relationshipName": "boardDetails",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "comment",
+            "otherEntityRelationshipName": "commentForComment",
+            "relationshipName": "commentForComment",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200110051356",
+    "entityTableName": "comment",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

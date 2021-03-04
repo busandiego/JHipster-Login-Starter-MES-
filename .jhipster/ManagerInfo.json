@@ -1,0 +1,40 @@
+{
+    "name": "ManagerInfo",
+    "fields": [
+        {
+            "fieldName": "managerNickName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "managerRating",
+            "fieldType": "ManagerRating",
+            "fieldValues": "BRONZE,SILVER,GOLD,PLATINUM,DIAMOND"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "adminUser",
+            "otherEntityRelationshipName": "managerInfo",
+            "relationshipName": "adminUser",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "affiliate",
+            "otherEntityRelationshipName": "managerInfo",
+            "relationshipName": "affiliate",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200109045633",
+    "entityTableName": "manager_info",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,37 @@
+{
+  "hotelgaServerApp": {
+    "hoMember": {
+      "home": {
+        "title": "Ho Members",
+        "createLabel": "Create a new Ho Member",
+        "createOrEditLabel": "Create or edit a Ho Member",
+        "notFound": "No Ho Members found"
+      },
+      "created": "A new Ho Member is created with identifier {{ param }}",
+      "updated": "A Ho Member is updated with identifier {{ param }}",
+      "deleted": "A Ho Member is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Ho Member {{ id }}?"
+      },
+      "detail": {
+        "title": "Ho Member"
+      },
+      "memberLoginId": "Member Login Id",
+      "memberPassword": "Member Password",
+      "memberName": "Member Name",
+      "memberNum": "Member Num",
+      "memberEmail": "Member Email",
+      "memberUUId": "Member UU Id",
+      "memberCreateDt": "Member Create Dt",
+      "memberUpdateDt": "Member Update Dt",
+      "joinInflow": "Join Inflow",
+      "pushToken": "Push Token",
+      "memberAuth": "Member Auth",
+      "memberState": "Member State",
+      "callAffiliate": "Call Affiliate",
+      "couponUseMember": "Coupon Use Member",
+      "reviewRoom": "Review Room",
+      "customerInquiry": "Customer Inquiry"
+    }
+  }
+}

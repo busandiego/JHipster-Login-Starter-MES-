@@ -1,0 +1,11 @@
+{
+  "hotelgaServerApp": {
+    "StateMember": {
+      "null": "",
+      "NORMAL": "NORMAL",
+      "ABNORMAL": "ABNORMAL",
+      "BLACK": "BLACK",
+      "DELETE": "DELETE"
+    }
+  }
+}

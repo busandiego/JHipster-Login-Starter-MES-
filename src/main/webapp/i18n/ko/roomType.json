@@ -1,0 +1,9 @@
+{
+  "hotelgaServerApp": {
+    "RoomType": {
+      "null": "",
+      "DAYUSE": "DAYUSE",
+      "FULLRENT": "FULLRENT"
+    }
+  }
+}

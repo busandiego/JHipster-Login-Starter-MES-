@@ -1,0 +1,107 @@
+{
+  "name": "PublishedCouponInfo",
+  "fields": [
+    {
+      "fieldName": "publishedCouponName",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "publishedCouponType",
+      "fieldType": "CouponType",
+      "fieldValues": "AFFILIATECOUPON,ABSOLUTECOUPON",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "publishedCouponAllUse",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "publishedCouponUseAffiliateId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "publishedCouponAmountType",
+      "fieldType": "CouponAmountType",
+      "fieldValues": "ONETHOUSAND,THREETHOUSAND,FIVETHOUSAND,SEVENTHOUSAND,TENTHOUSAND"
+    },
+    {
+      "fieldName": "publishedCouponDuplication",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "publishedCouponAutoPublish",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "publishedCouponUseTypeLimit",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "publishedCouponUseType",
+      "fieldType": "CouponUseType",
+      "fieldValues": "DAYUSE,FULLRENT,RELAYRENT"
+    },
+    {
+      "fieldName": "publishedCouponUsePriceLimit",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "publishedCouponUsePrice",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "publishedCouponUseExpireLimit",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "publishedCouponUseExpireMonth",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "publishedCouponCreateDt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "publishedCouponUpdateDt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "publishedCouponCurrentPublishedDt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "publishedCouponAmountNum",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "publishedCouponSoldNum",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "couponState",
+      "fieldType": "StateCoupon",
+      "fieldValues": "NORMAL,ABNORMAL,DELETE",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "couponPublishedHistoriesId",
+      "fieldType": "Long"
+    }
+  ],
+  "entityTableName": "published_coupon_info",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

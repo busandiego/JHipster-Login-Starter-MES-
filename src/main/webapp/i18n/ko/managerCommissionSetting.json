@@ -1,0 +1,25 @@
+{
+  "hotelgaServerApp": {
+    "managerCommissionSetting": {
+      "home": {
+        "title": "Manager Commission Settings",
+        "createLabel": "Create a new Manager Commission Setting",
+        "createOrEditLabel": "Create or edit a Manager Commission Setting",
+        "notFound": "No Manager Commission Settings found"
+      },
+      "created": "A new Manager Commission Setting is created with identifier {{ param }}",
+      "updated": "A Manager Commission Setting is updated with identifier {{ param }}",
+      "deleted": "A Manager Commission Setting is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Manager Commission Setting {{ id }}?"
+      },
+      "detail": {
+        "title": "Manager Commission Setting"
+      },
+      "commissionPer": "Commission Per",
+      "settingDt": "Setting Dt",
+      "settingUser": "Setting User",
+      "applyUser": "Apply User"
+    }
+  }
+}

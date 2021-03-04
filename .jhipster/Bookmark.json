@@ -1,0 +1,28 @@
+{
+    "name": "Bookmark",
+    "fields": [
+        {
+            "fieldName": "markingDt",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "adminUser",
+            "otherEntityRelationshipName": "bookmark",
+            "relationshipName": "adminUser",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200114085629",
+    "entityTableName": "bookmark",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

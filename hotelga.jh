@@ -1,0 +1,942 @@
+entity HoMember {
+	id Int required,
+    memberLoginId String required,
+    memberPassword String required,
+    memberName String required,
+    memberNum String required,
+    memberEmail String required,
+    memberUUId String required,
+    memberCreateDt ZonedDateTime,
+    memberUpdateDt ZonedDateTime,
+    joinInflow String,
+    pushToken String,
+    memberAuth AuthMember required,
+    memberState StateMember required
+}
+
+enum AuthMember {
+	GUEST, NORMAL, VIP, VVIP
+}
+
+enum StateMember {
+	NORMAL, ABNORMAL, BLACK, DELETE
+}
+
+entity AdminUser {
+	id Int required,
+    adminLoginId String required,
+    adminPassword String required,
+    adminName String required,
+    adminNick String required,
+    adminNum String required,
+    adminEmail String required,
+    adminCreateDt ZonedDateTime ,
+    adminUpdateDt ZonedDateTime,
+    pushToken String,
+    adminState StateAdmin
+}
+
+entity Manager {
+	id Int required,
+    managerLoginId String required,
+    managerPassword String required,
+    managerName String required,
+    managerNum String required,
+    managerEmail String,
+    managerNickName String,
+    managerCreateDt ZonedDateTime,
+    managerUpdateDt ZonedDateTime,
+    managerState StateManager required,
+    pushToken String,
+    managerRating ManagerRating
+}
+
+enum StateManager {
+	NORMAL, ABNORMAL, DELETE, WAITING
+}
+
+
+entity ManagerWorkHistories {
+	id Int required,
+    joinDt ZonedDateTime,
+  	resignationDt ZonedDateTime,
+    workState StateWork
+}
+
+enum StateWork {
+	INOFFICE, RESIGNATION
+}
+
+relationship OneToMany {
+	Affiliate to ManagerWorkHistories
+}
+
+entity ManagerAccount {
+	id Int required,
+    managerAccountNum String,
+    managerAccountBank String,
+    managerAccountOnwer String,
+    managerAccountApplyDt ZonedDateTime,
+    managerAccountDecideDt ZonedDateTime,
+    managerAccountState ManagerAccountState
+}
+
+enum ManagerAccountState {
+	NORMAL, ABNORMAL, WAITING, DELETE
+}
+
+relationship OneToMany {
+	Manager to ManagerAccount
+}
+
+entity AdminUserRole {
+	id Int required,
+	roleType RoleType required
+}
+
+entity AdminUserAuth {
+	id Int required,
+    authorityType AuthorityType required
+}
+
+enum AuthorityType {
+	ACCOUNT, CALCULATE, ACCOMMODATION, AFFILIATE, CUSTOMERSERVICE, MAINTENANCE
+}
+
+enum RoleType {
+	SYSTEM, BUSINESS, CS, HR, CONTRACT, ACCOUNTING
+}
+
+enum ManagerRating {
+	BRONZE, SILVER, GOLD, PLATINUM, DIAMOND
+}
+
+enum StateAdmin {
+	NORMAL, ABNORMAL, DELETE, WAITING, REFUSAL
+}
+
+entity Affiliate {
+	id Int required,
+    affiliateName String required,
+    affiliateRegNum Integer required,
+    affiliateOwner String required,
+    affiliateBank String required,
+    affiliateAccount String required,
+    affiliateAccountHolder String required,
+    affiliateMemo String,
+    affiliateAddress String required,
+    affiliateRegDt ZonedDateTime,
+    affiliateUpdateDt ZonedDateTime,
+    affiliateCommissionPer Integer,
+    affiliateState StateAffiliate
+}
+
+enum StateAffiliate {
+	NORMAL, ABNORMAL, DELETE
+}
+
+entity ApplyAffiliate {
+	id Int required,
+    affiliateName String required,
+    applyName String required,
+    affiliateAddress String required,
+    affiliateNum String required,
+    applyDt	ZonedDateTime,
+    applyAffiliateState StateApplyAffiliate
+}
+
+enum StateApplyAffiliate {
+	WAITING, APPROVE, REFER
+}
+
+entity AffiliateAdmin {
+	id Int required,
+    affiliateAdminLoginId String required,
+    affiliateAdminPassowrd String required,
+    affiliateAdminEmail String required,
+    pushToken String,
+    createDt ZonedDateTime,
+    updateDt ZonedDateTime,
+    affiliateAdminState StateAffiliateAdmin
+}
+
+enum StateAffiliateAdmin {
+	NORMAL, ABNORMAL, DELETE
+}
+
+entity Accommodation {
+	id Int required,
+	accommodationName String required,
+    promotionalPhrase String required,
+    accommodationIntroTitle String,
+    accommodationIntroContents TextBlob,
+    accommodationRoadAddress String required,
+    accommodationZipAddress String required,
+    accommodationLineComment String required,
+    accommodationFullRoom Boolean required,
+    accommodationFullDayuse Boolean required,
+    accommodationType AccommodationType,
+    affiliateCheck Boolean required,
+    accommodationCreateDt ZonedDateTime,
+    accommodationUpdateDt ZonedDateTime,
+    alignmentNum Integer,
+    accommodationLatitude BigDecimal,
+    accommodationLongitude BigDecimal,
+    accommodationPreReservation Boolean,
+    accommodationPreReservationDate Integer,
+    accommodationState StateAccommodation
+}
+
+enum AccommodationType {
+	MOTEL, HOTEL
+}
+
+enum StateAccommodation {
+	NORMAL, ABNORMAL, DELETE
+}
+
+entity AccommodationSales {
+	id Int required
+}
+
+entity AccommodationImage {
+	id Int required,
+    imageName String required,
+    imagePath String required,
+    createDt ZonedDateTime,
+    alignmentNum Integer
+}
+
+entity AccommodationAmenity {
+	id Int required,
+    amenityType AmenityType
+}
+
+enum AmenityType {
+	KARAOKE, PC, CONVENIENCE, ATM
+}
+
+entity AccommodationServiceInfo {
+	id Int required,
+    serviceType AdServiceType required,
+    serviceStartDt ZonedDateTime,
+    serviceEndDt ZonedDateTime
+}
+
+enum AdServiceType {
+	SEASON, HOLIDAY
+}
+
+entity AccommodationDescription {
+	id Int required,
+    descriptionTitle String required,
+    descriptionContents TextBlob required,
+    descriptionOrder Integer,
+    descriptionCreateDt ZonedDateTime,
+    descriptionUpdateDt ZonedDateTime
+}
+
+relationship OneToMany {
+	Accommodation to AccommodationDescription
+}
+
+entity Rooms {
+	id Int required,
+    roomName String required,
+    roomDefaultNum Integer,
+    roomMaxNum Integer,
+    roomMainView Boolean,
+    roomState StateRoom required
+}
+
+enum StateRoom {
+	NORMAL, ABNORMAL, DELETE
+}
+
+entity RoomImages {
+	id Int required,
+    roomImageName String required,
+    roomImagePath String required,
+    roomImageCreateDt ZonedDateTime required,
+    roomImageState StateRoomImage
+}
+
+enum StateRoomImage {
+	NORMAL, ABNORMAL, DELETE
+}
+
+relationship OneToMany {
+	Rooms to RoomImages
+}
+
+entity RoomPrice {
+	id Int required,
+    applyStartDt ZonedDateTime,
+    applyEndDt ZonedDateTime,
+    applyDt ZonedDateTime required,
+    roomNum Integer required,
+    price Integer required,
+    relayPrice Integer,
+    discountPer Integer,
+    relayAvailable Boolean,
+    roomType RoomType required
+}
+
+enum RoomType {
+	DAYUSE, FULLRENT
+}
+
+entity Coupon {
+	id Int required,
+    couponUniqCode String required,
+    couponName String required,
+    couponType CouponType required,
+    couponUseType CouponUseType required,
+    couponDiscountPer Integer,
+    couponDiscountAmount Integer,
+    couponValidityDt ZonedDateTime,
+    couponDescription String,
+    couponQuantity Integer,
+    couponQuantityLimit Boolean,
+    couponState StateCoupon required
+}
+
+enum CouponType {
+	AFFILIATECOUPON, ABSOLUTECOUPON
+}
+
+enum CouponUseType {
+	ALL, DAYUSE, FULLRENT, LELAY
+}
+
+enum StateCoupon {
+	NORMAL, ABNORMAL, DELETE
+}
+
+entity CouponHistories {
+	id Int required,
+    pushishUniqCode String required,
+    publishedDt ZonedDateTime,
+    useCheck Boolean required
+}
+
+
+entity HeadCategory {
+	id Int required,
+    headCategoryName String required,
+    createDt ZonedDateTime,
+    state HeadCategoryState
+}
+
+enum HeadCategoryState {
+	NORMAL, ABNORMAL, DELETE
+}
+
+entity Board {
+	id Int required,
+    boardName String required,
+    boardType BoardType required,
+	readLevel Integer,
+    writeLevel Integer,
+    boardCreateDt ZonedDateTime,
+    boardUdpateDt ZonedDateTime,
+    borardState StateBoard required
+}
+
+enum BoardType {
+	FREE, ETC
+}
+
+enum StateBoard {
+	NORMAL, ABNORMAL, DELETE
+}
+
+entity BoardDetails {
+	id Int required,
+    headCategory String,
+    title String required,
+    contents TextBlob required,
+    createDt ZonedDateTime,
+    updateDt ZonedDateTime,
+    likeNum Integer,
+    dislikeNum Integer
+}
+
+entity BoardFile {
+	id Int required,
+    fileName String required,
+    filePath String required,
+    createDt ZonedDateTime
+}
+
+entity Comment {
+	id Int required,
+    contents String required,
+    createDt ZonedDateTime,
+    updateDt ZonedDateTime
+}
+
+entity Reservation {
+	id Int required,
+    orderUniqNum String required,
+    orderUserName String required,
+    orderUserNum String required,
+    reservationType String required,
+    accommodationName String required,
+    roomName String required,
+    roomPrice Integer required,
+    roomDiscountPer Integer,
+    couponName String,
+    couponType String,
+    orderCreateDt ZonedDateTime required,
+    checkInDt ZonedDateTime,
+    checkOutDt ZonedDateTime,
+    orderState StateOrder
+}
+
+enum StateOrder {
+	NORMAL, ABNORMAL, DELETE
+}
+
+entity Payment {
+	id Int required,
+    sellingPrice Integer required,
+    commission Integer required,
+    paymentMoney Integer required,
+    paymentDt ZonedDateTime required,
+    couponDiscount Integer,
+    transactionNum String,
+    paymentMethod String,
+  	remark String,
+    paymentState StatePayment required
+}
+
+enum StatePayment {
+	NORMAL, ABNORMAL, DELETE
+}
+
+entity ReviewRoom {
+	id Int required,
+    reviewScore Integer required,
+    reviewTitle String required,
+    reviewContents String required,
+    reviewCreateDt ZonedDateTime,
+    reviewUpdateDt ZonedDateTime,
+    reviewState StateReview
+}
+
+enum StateReview {
+	NORMAL, ABNORMAL, DELETE
+}
+
+entity ReviewResponse {
+	id Int required,
+    reviewResponseTitle String required,
+    reviewResponseContents String required,
+    reviewResponseCreateDt ZonedDateTime,
+    reviewResponseState StateReviewResponse required
+}
+
+enum StateReviewResponse {
+	NORMAL, ABNORMAL, DELETE
+}
+
+entity InviteCard {
+	id Int required,
+    inviteName String required,
+    inviteCreateDt ZonedDateTime,
+    inviteExpirationDt ZonedDateTime
+}
+
+entity InvitePublishHistories {
+	id Int required,
+    responseAddress String required,
+    publishedCheck Boolean,
+    publishedDt ZonedDateTime
+}
+
+entity HoEvent {
+	id Int required,
+    eventName String required,
+    eventPageUrl String,
+    eventTarget EventTarget,
+    eventStartDt ZonedDateTime,
+    eventEndDt ZonedDateTime,
+    eventCreateDt ZonedDateTime,
+    eventUpdateDt ZonedDateTime,
+    eventState StateEvent
+}
+
+enum StateEvent {
+	NORMAL, ABNORMAL, DELETE
+}
+
+enum EventTarget {
+	ALL, SERVICE, MANAGER, AFFILIATE
+}
+
+entity HoEventImages {
+	id Int required,
+    eventImageName String required,
+    eventImagePath String required,
+    eventImageCreatDt ZonedDateTime
+}
+
+entity FaqBoard {
+	id Int required,
+    faqContents TextBlob required,
+    faqAnswer TextBlob required,
+    faqCreateDt ZonedDateTime,
+    faqUpdateDt ZonedDateTime,
+  	faqType FaqType
+}
+
+enum FaqType {
+	PAYMENT, RESERVATION, EVENT
+}
+
+entity CustomerInquiry {
+	id Int required,
+    inquiryType InquiryType required,
+    inquiryTitle String required,
+    inquiryContents String required,
+    inquiryCreateDt ZonedDateTime,
+    inquiryState StateInquiry,
+    answerCheck Boolean
+}
+
+enum StateInquiry {
+	NORMAL, ABNORMAL, DELETE, COMPLETE
+}
+
+enum InquiryType {
+	PAYMENT, RESERVATION, EVENT, ETC
+}
+
+entity InquiryAnswer {
+	id Int required,
+    inquiryAnswerTitle String required,
+    inquiryAnswerContents String required,
+    inquiryAnswerCreateDt ZonedDateTime,
+    inquiryAnswerState StateAnswer
+}
+
+enum StateAnswer {
+	NORMAL, ABNORMAL, DELETE
+}
+
+entity HoNotice {
+	id Int required,
+    noticeTitle String required,
+    noticeContents TextBlob required,
+    noticeVisiblity Boolean required,
+    noticeVisibleAuth VisibleAuth
+}
+
+enum VisibleAuth {
+	ALL, ADMIN, AFFILIATE, MANAGER, SERVICE
+}
+
+entity TotalBalanceByAffiliate {
+	id Int required,
+    affiliateName String required,
+    affiliateAccountHolder String required,
+    affiliateBank String required,
+    affiliateAccount String required,
+    balanceNum Integer required,
+    totalMoney Integer required,
+    commission Integer required,
+    balanceMoney Integer required,
+    balanceDt ZonedDateTime required,
+    balanceState StateBalance required
+}
+
+enum StateBalance {
+	NORMAL, ABNORMAL, COMPLETE, FAIL, DELETE
+}
+
+entity BalanceByAffiliateDetails {
+	id Int required,
+    reserveUserName String required,
+    reserveUserNum String required,
+    roomName String required,
+    reservationDt ZonedDateTime required,
+    sellingPrice Integer required,
+    couponDiscount Integer required,
+    couponType CouponType required,
+    commission Integer required,
+    paymentMoney Integer required,
+    balanceState StateBalance required
+}
+
+entity Terms {
+	id Int required,
+    termsType TermsType,
+    termsTarget TermsTarget,
+    termsFileName String required,
+    termsPath String required,
+    termsCreateDt ZonedDateTime,
+    termsUpdateDt ZonedDateTime
+}
+
+enum TermsType {
+	SERIVCE, PERSNALINFO, GPSINFO, FINANCEINFO, YOUTHPROTECT
+}
+
+enum TermsTarget {
+	ALL, SERVICE, AFFILIATE, MANAGER
+}
+
+entity AffiliateCommissionSetting {
+	id Int required,
+    commissionPerMin Integer required,
+    commissionPerMax Integer required,
+    settingDt ZonedDateTime required
+}
+
+entity ManagerCommissionSetting {
+	id Int required,
+    commissionPer Integer required,
+    settingDt ZonedDateTime required
+}
+
+entity PGCommissionSetting {
+	id Int required,
+    commissionPer Integer required,
+    settingDt ZonedDateTime required
+}
+
+entity InvestmentCommissionSetting {
+	id Int required,
+    commissionPer Integer required,
+    settingDt ZonedDateTime required
+}
+
+entity MileageSetting {
+	id Int required,
+    mileagePerMin Integer required,
+    mileagePerMax Integer required,
+    settingDt ZonedDateTime required
+}
+
+entity InflowPath {
+	id Int required,
+    inflowPathName String,
+    codeName String,
+    createDt ZonedDateTime,
+    updateDt ZonedDateTime,
+    inflowPathState StateInflow
+}
+
+enum StateInflow {
+	NORMAL, ABNORMAL, DELETE
+}
+
+entity Category {
+	id Int required,
+    categoryName String required,
+    codeName String,
+    createDt ZonedDateTime,
+    updateDt ZonedDateTime,
+    categoryState StateCategory
+}
+
+enum StateCategory {
+	NORMAL, ABNORMAL, DELETE
+}
+
+entity TotalBalanceTime {
+	id Int required,
+    balanceTime ZonedDateTime
+}
+
+entity AdminHistories {
+	id Int required,
+    actionType ActionType,
+    actionLoginId String required,
+    actionNum String required,
+    contents String required,
+    accessIp String required,
+    createDt ZonedDateTime required
+}
+
+enum ActionType {
+	AUTH, ACCOUNT, PARTNER, MAKETING, ACCOMMODATION, SELLING, BALANCE, CS, SETTING
+}
+
+entity Bookmark {
+	id Int required,
+    markingDt ZonedDateTime
+}
+
+entity CustomerServiceTime {
+	id Int required,
+    csOpenTime ZonedDateTime,
+    csCloseTIme ZonedDateTime
+}
+
+entity CallAffiliate {
+	id Int required,
+    startCallDt ZonedDateTime,
+    endCallDt ZonedDateTime
+}
+
+//관계 설정
+relationship OneToMany {
+    AdminUser to AdminUserRole,
+    AdminUser to AdminUserAuth
+}
+
+relationship OneToMany {
+	HoMember to CallAffiliate,
+    Affiliate to CallAffiliate
+}
+
+relationship OneToOne {
+	Affiliate to AdminUser
+}
+
+relationship OneToMany {
+	Accommodation to AccommodationImage
+}
+
+relationship OneToOne {
+	Accommodation to AdminUser
+}
+
+relationship OneToMany {
+	Accommodation to AccommodationAmenity
+}
+
+relationship OneToMany {
+	Affiliate to Accommodation
+}
+
+relationship OneToMany {
+	Accommodation to AccommodationServiceInfo
+}
+
+relationship OneToMany {
+	Accommodation to Rooms
+}
+
+relationship OneToMany {
+	Rooms to RoomPrice
+}
+
+relationship OneToMany {
+	Affiliate to Coupon
+}
+
+relationship OneToMany {
+	Coupon to CouponHistories
+}
+
+relationship OneToMany {
+	HoMember{couponUseMember} to CouponHistories{useMember},
+    AdminUser{couponPublisher} to CouponHistories{couponPublisher}
+}
+
+relationship OneToMany {
+	AdminUser to AccommodationSales{salesUserId},
+    Accommodation to AccommodationSales{accommodationId}
+}
+
+relationship OneToMany {
+	AdminUser to Board{boardAdminUserId},
+    AdminUser to BoardDetails{writeUserId}
+}
+
+relationship OneToMany {
+	BoardDetails to BoardFile,
+    BoardDetails to Comment
+}
+
+relationship OneToMany {
+	Comment{commentForComment} to Comment{commentForComment}
+}
+
+relationship OneToOne {
+	Reservation{orderMember} to HoMember
+}
+
+relationship OneToMany {
+	 Reservation to Payment
+}
+
+relationship OneToMany {
+	Rooms to ReviewRoom,
+    HoMember to ReviewRoom
+}
+
+relationship OneToMany {
+	ReviewRoom to ReviewResponse
+}
+
+relationship OneToOne {
+	InviteCard{manager} to Manager,
+    InviteCard{affiliate} to Affiliate
+}
+
+relationship OneToOne {
+	FaqBoard to AdminUser
+}
+
+relationship OneToMany {
+	HoMember to CustomerInquiry,
+    AdminUser to InquiryAnswer
+}
+
+relationship OneToOne {
+	InquiryAnswer to CustomerInquiry
+}
+
+relationship OneToMany {
+	CouponHistories to Payment
+}
+
+relationship OneToMany {
+	Manager to ManagerWorkHistories
+}
+
+relationship OneToMany {
+	AdminUser to Terms
+}
+
+relationship OneToMany {
+	TotalBalanceByAffiliate to BalanceByAffiliateDetails
+}
+
+relationship OneToMany {
+	AdminUser to HoEvent
+}
+
+relationship OneToMany {
+	HoEvent to HoEventImages
+}
+
+relationship OneToMany {
+	AdminUser to HoNotice
+}
+
+relationship OneToMany {
+	AdminUser to AffiliateCommissionSetting,
+    Affiliate to AffiliateCommissionSetting,
+    AdminUser{ManagerCommissionSettingUser} to ManagerCommissionSetting{settingUser},
+    Manager{ManagerCommissionApplyUser} to ManagerCommissionSetting{applyUser},
+    AdminUser{PGCommissionSettingUser} to PGCommissionSetting{settingUser},
+    AdminUser{PGCommissionApplyUser} to PGCommissionSetting{applyUser},
+    AdminUser{InvestmentCommissionSettingUser} to InvestmentCommissionSetting{settingUser},
+    AdminUser{InvestmentCommissionApplyUser} to InvestmentCommissionSetting{applyUser},
+    AdminUser to MileageSetting,
+    Affiliate to MileageSetting,
+    AdminUser to InflowPath,
+    AdminUser to Category
+}
+
+relationship OneToMany {
+	AdminUser to Bookmark
+}
+
+relationship OneToMany {
+	Affiliate to TotalBalanceTime,
+    AdminUser{timeApplyManager} to TotalBalanceTime{timeApplyManager},
+    AdminUser{settingUser} to TotalBalanceTime{settingUser}
+}
+
+relationship OneToMany {
+	AdminUser to InvitePublishHistories
+}
+
+relationship OneToMany {
+	AdminUser to InvitePublishHistories
+}
+
+relationship OneToMany {
+	Affiliate to AffiliateAdmin
+}
+
+
+
+//페이징 처리
+paginate HoMember with pagination
+paginate AdminUser with pagination
+paginate Manager with pagination
+paginate Affiliate with pagination
+paginate Accommodation with pagination
+paginate ManagerWorkHistories with pagination
+paginate ManagerAccount with pagination
+paginate Affiliate with pagination
+paginate ApplyAffiliate with pagination
+paginate AffiliateAdmin with pagination
+paginate Accommodation with pagination
+paginate Rooms with pagination
+paginate RoomPrice with pagination
+paginate Coupon with pagination
+paginate CouponHistories with pagination
+paginate Board with pagination
+paginate BoardDetails with pagination
+paginate Comment with pagination
+paginate Reservation with pagination
+paginate Payment with pagination
+paginate ReviewRoom with pagination
+paginate InviteCard with pagination
+paginate InvitePublishHistories with pagination
+paginate HoEvent with pagination
+paginate FaqBoard with pagination
+paginate CustomerInquiry with pagination
+paginate InquiryAnswer with pagination
+paginate TotalBalanceByAffiliate with pagination
+paginate BalanceByAffiliateDetails with pagination
+paginate Terms with pagination
+paginate InflowPath with pagination
+paginate Category with pagination
+paginate AdminHistories with pagination
+
+
+//필터
+filter HoMember
+filter AdminUser
+filter Manager
+filter Affiliate
+filter Accommodation
+filter ManagerWorkHistories
+filter ManagerAccount
+filter Affiliate
+filter ApplyAffiliate
+filter AffiliateAdmin
+filter Accommodation
+filter Rooms
+filter RoomPrice
+filter Coupon
+filter CouponHistories
+filter Board
+filter BoardDetails
+filter Comment
+filter Reservation
+filter Payment
+filter ReviewRoom
+filter InviteCard
+filter InvitePublishHistories
+filter HoEvent
+filter FaqBoard
+filter CustomerInquiry
+filter InquiryAnswer
+filter TotalBalanceByAffiliate
+filter BalanceByAffiliateDetails
+filter Terms
+filter InflowPath
+filter Category
+filter AdminHistories
+
+
+
+
+
+
+
+
+
+
+
+

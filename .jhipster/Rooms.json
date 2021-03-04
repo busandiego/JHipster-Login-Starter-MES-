@@ -1,0 +1,69 @@
+{
+    "name": "Rooms",
+    "fields": [
+        {
+            "fieldName": "roomName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "roomDefaultNum",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "roomMaxNum",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "roomMainView",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "roomState",
+            "fieldType": "StateRoom",
+            "fieldValues": "NORMAL,ABNORMAL,DELETE",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "roomImages",
+            "otherEntityRelationshipName": "rooms",
+            "relationshipName": "roomImages"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "roomPrice",
+            "otherEntityRelationshipName": "rooms",
+            "relationshipName": "roomPrice"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "reviewRoom",
+            "otherEntityRelationshipName": "rooms",
+            "relationshipName": "reviewRoom"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "accommodation",
+            "otherEntityRelationshipName": "rooms",
+            "relationshipName": "accommodation",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200109045639",
+    "entityTableName": "rooms",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

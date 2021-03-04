@@ -1,0 +1,96 @@
+{
+    "name": "Manager",
+    "fields": [
+        {
+            "fieldName": "managerLoginId",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "managerPassword",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "managerName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "managerNum",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "managerEmail",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "managerNickName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "managerCreateDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "managerUpdateDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "managerState",
+            "fieldType": "StateManager",
+            "fieldValues": "NORMAL,ABNORMAL,DELETE,WAITING",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "pushToken",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "managerRating",
+            "fieldType": "ManagerRating",
+            "fieldValues": "BRONZE,SILVER,GOLD,PLATINUM,DIAMOND"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "managerAccount",
+            "otherEntityRelationshipName": "manager",
+            "relationshipName": "managerAccount"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "managerWorkHistories",
+            "otherEntityRelationshipName": "manager",
+            "relationshipName": "managerWorkHistories"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "managerCommissionSetting",
+            "otherEntityRelationshipName": "applyUser",
+            "relationshipName": "managerCommissionApplyUser"
+        }
+    ],
+    "changelogDate": "20200120093018",
+    "entityTableName": "manager",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,12 @@
+{
+  "hotelgaServerApp": {
+    "VisibleAuth": {
+      "null": "",
+      "ALL": "ALL",
+      "ADMIN": "ADMIN",
+      "AFFILIATE": "AFFILIATE",
+      "MANAGER": "MANAGER",
+      "SERVICE": "SERVICE"
+    }
+  }
+}

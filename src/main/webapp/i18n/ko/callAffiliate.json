@@ -1,0 +1,25 @@
+{
+  "hotelgaServerApp": {
+    "callAffiliate": {
+      "home": {
+        "title": "Call Affiliates",
+        "createLabel": "Create a new Call Affiliate",
+        "createOrEditLabel": "Create or edit a Call Affiliate",
+        "notFound": "No Call Affiliates found"
+      },
+      "created": "A new Call Affiliate is created with identifier {{ param }}",
+      "updated": "A Call Affiliate is updated with identifier {{ param }}",
+      "deleted": "A Call Affiliate is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Call Affiliate {{ id }}?"
+      },
+      "detail": {
+        "title": "Call Affiliate"
+      },
+      "startCallDt": "Start Call Dt",
+      "endCallDt": "End Call Dt",
+      "hoMember": "Ho Member",
+      "affiliate": "Affiliate"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+    "name": "InvestmentCommissionSetting",
+    "fields": [
+        {
+            "fieldName": "commissionPer",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "settingDt",
+            "fieldType": "ZonedDateTime",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "adminUser",
+            "otherEntityRelationshipName": "investmentCommissionSettingUser",
+            "relationshipName": "settingUser",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "adminUser",
+            "otherEntityRelationshipName": "investmentCommissionApplyUser",
+            "relationshipName": "applyUser",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200114064919",
+    "entityTableName": "investment_commission_setting",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

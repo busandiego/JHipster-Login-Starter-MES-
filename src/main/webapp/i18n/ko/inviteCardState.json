@@ -1,0 +1,11 @@
+{
+  "hotelgaServerApp": {
+    "InviteCardState": {
+      "null": "",
+      "NORMAL": "NORMAL",
+      "ABNORMAL": "ABNORMAL",
+      "DELETE": "DELETE",
+      "WAITING": "WAITING"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "hotelgaServerApp": {
+    "StateBalance": {
+      "null": "",
+      "NORMAL": "NORMAL",
+      "ABNORMAL": "ABNORMAL",
+      "COMPLETE": "COMPLETE",
+      "FAIL": "FAIL",
+      "DELETE": "DELETE"
+    }
+  }
+}

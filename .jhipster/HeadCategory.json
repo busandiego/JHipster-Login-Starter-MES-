@@ -1,0 +1,32 @@
+{
+    "name": "HeadCategory",
+    "fields": [
+        {
+            "fieldName": "headCategoryName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "createDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "state",
+            "fieldType": "HeadCategoryState",
+            "fieldValues": "NORMAL,ABNORMAL,DELETE"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200121065134",
+    "entityTableName": "head_category",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

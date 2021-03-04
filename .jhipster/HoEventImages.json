@@ -1,0 +1,42 @@
+{
+    "name": "HoEventImages",
+    "fields": [
+        {
+            "fieldName": "eventImageName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "eventImagePath",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "eventImageCreatDt",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "hoEvent",
+            "otherEntityRelationshipName": "hoEventImages",
+            "relationshipName": "hoEvent",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200113080848",
+    "entityTableName": "ho_event_images",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

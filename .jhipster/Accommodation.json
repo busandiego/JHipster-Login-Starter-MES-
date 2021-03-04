@@ -1,0 +1,171 @@
+{
+    "name": "Accommodation",
+    "fields": [
+        {
+            "fieldName": "accommodationName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "promotionalPhrase",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "accommodationIntroTitle",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "accommodationIntroContents",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text"
+        },
+        {
+            "fieldName": "accommodationRoadAddress",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "accommodationZipAddress",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "accommodationLineComment",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "accommodationFullRoom",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "accommodationFullDayuse",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "accommodationType",
+            "fieldType": "AccommodationType",
+            "fieldValues": "MOTEL,HOTEL"
+        },
+        {
+            "fieldName": "affiliateCheck",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "accommodationCreateDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "accommodationUpdateDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "alignmentNum",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "accommodationLatitude",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "accommodationLongitude",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "accommodationPreReservation",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "accommodationPreReservationDate",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "accommodationState",
+            "fieldType": "StateAccommodation",
+            "fieldValues": "NORMAL,ABNORMAL,DELETE"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "adminUser",
+            "otherEntityRelationshipName": "accommodation",
+            "relationshipName": "adminUser",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "accommodationDescription",
+            "otherEntityRelationshipName": "accommodation",
+            "relationshipName": "accommodationDescription"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "accommodationImage",
+            "otherEntityRelationshipName": "accommodation",
+            "relationshipName": "accommodationImage"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "accommodationAmenity",
+            "otherEntityRelationshipName": "accommodation",
+            "relationshipName": "accommodationAmenity"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "accommodationServiceInfo",
+            "otherEntityRelationshipName": "accommodation",
+            "relationshipName": "accommodationServiceInfo"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "rooms",
+            "otherEntityRelationshipName": "accommodation",
+            "relationshipName": "rooms"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "accommodationSales",
+            "otherEntityRelationshipName": "accommodationId",
+            "relationshipName": "accommodationSales"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "affiliate",
+            "otherEntityRelationshipName": "accommodation",
+            "relationshipName": "affiliate",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200109045635",
+    "entityTableName": "accommodation",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

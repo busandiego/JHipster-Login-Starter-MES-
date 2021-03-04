@@ -1,0 +1,46 @@
+{
+    "name": "AccommodationImage",
+    "fields": [
+        {
+            "fieldName": "imageName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "imagePath",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "createDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "alignmentNum",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "accommodation",
+            "otherEntityRelationshipName": "accommodationImage",
+            "relationshipName": "accommodation",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200109045636",
+    "entityTableName": "accommodation_image",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,41 @@
+{
+  "hotelgaServerApp": {
+    "publishedCouponInfo": {
+      "home": {
+        "title": "Published Coupon Infos",
+        "createLabel": "Create a new Published Coupon Info",
+        "createOrEditLabel": "Create or edit a Published Coupon Info",
+        "notFound": "No Published Coupon Infos found"
+      },
+      "created": "A new Published Coupon Info is created with identifier {{ param }}",
+      "updated": "A Published Coupon Info is updated with identifier {{ param }}",
+      "deleted": "A Published Coupon Info is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Published Coupon Info {{ id }}?"
+      },
+      "detail": {
+        "title": "Published Coupon Info"
+      },
+      "publishedCouponName": "Published Coupon Name",
+      "publishedCouponType": "Published Coupon Type",
+      "publishedCouponAllUse": "Published Coupon All Use",
+      "publishedCouponUseAffiliateId": "Published Coupon Use Affiliate Id",
+      "publishedCouponAmountType": "Published Coupon Amount Type",
+      "publishedCouponDuplication": "Published Coupon Duplication",
+      "publishedCouponAutoPublish": "Published Coupon Auto Publish",
+      "publishedCouponUseTypeLimit": "Published Coupon Use Type Limit",
+      "publishedCouponUseType": "Published Coupon Use Type",
+      "publishedCouponUsePriceLimit": "Published Coupon Use Price Limit",
+      "publishedCouponUsePrice": "Published Coupon Use Price",
+      "publishedCouponUseExpireLimit": "Published Coupon Use Expire Limit",
+      "publishedCouponUseExpireMonth": "Published Coupon Use Expire Month",
+      "publishedCouponCreateDt": "Published Coupon Create Dt",
+      "publishedCouponUpdateDt": "Published Coupon Update Dt",
+      "publishedCouponCurrentPublishedDt": "Published Coupon Current Published Dt",
+      "publishedCouponAmountNum": "Published Coupon Amount Num",
+      "publishedCouponSoldNum": "Published Coupon Sold Num",
+      "couponState": "Coupon State",
+      "couponPublishedHistoriesId": "Coupon Published Histories Id"
+    }
+  }
+}

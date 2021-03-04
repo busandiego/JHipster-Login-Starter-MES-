@@ -1,0 +1,28 @@
+{
+  "hotelgaServerApp": {
+    "terms": {
+      "home": {
+        "title": "Terms",
+        "createLabel": "Create a new Terms",
+        "createOrEditLabel": "Create or edit a Terms",
+        "notFound": "No Terms found"
+      },
+      "created": "A new Terms is created with identifier {{ param }}",
+      "updated": "A Terms is updated with identifier {{ param }}",
+      "deleted": "A Terms is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Terms {{ id }}?"
+      },
+      "detail": {
+        "title": "Terms"
+      },
+      "termsType": "Terms Type",
+      "termsTarget": "Terms Target",
+      "termsFileName": "Terms File Name",
+      "termsPath": "Terms Path",
+      "termsCreateDt": "Terms Create Dt",
+      "termsUpdateDt": "Terms Update Dt",
+      "adminUser": "Admin User"
+    }
+  }
+}

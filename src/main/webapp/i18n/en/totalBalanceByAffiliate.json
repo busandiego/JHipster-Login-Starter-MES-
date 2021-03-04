@@ -1,0 +1,32 @@
+{
+  "hotelgaServerApp": {
+    "totalBalanceByAffiliate": {
+      "home": {
+        "title": "Total Balance By Affiliates",
+        "createLabel": "Create a new Total Balance By Affiliate",
+        "createOrEditLabel": "Create or edit a Total Balance By Affiliate",
+        "notFound": "No Total Balance By Affiliates found"
+      },
+      "created": "A new Total Balance By Affiliate is created with identifier {{ param }}",
+      "updated": "A Total Balance By Affiliate is updated with identifier {{ param }}",
+      "deleted": "A Total Balance By Affiliate is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Total Balance By Affiliate {{ id }}?"
+      },
+      "detail": {
+        "title": "Total Balance By Affiliate"
+      },
+      "affiliateName": "Affiliate Name",
+      "affiliateAccountHolder": "Affiliate Account Holder",
+      "affiliateBank": "Affiliate Bank",
+      "affiliateAccount": "Affiliate Account",
+      "balanceNum": "Balance Num",
+      "totalMoney": "Total Money",
+      "commission": "Commission",
+      "balanceMoney": "Balance Money",
+      "balanceDt": "Balance Dt",
+      "balanceState": "Balance State",
+      "balanceByAffiliateDetails": "Balance By Affiliate Details"
+    }
+  }
+}

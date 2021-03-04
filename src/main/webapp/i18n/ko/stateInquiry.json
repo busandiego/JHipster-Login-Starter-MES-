@@ -1,0 +1,11 @@
+{
+  "hotelgaServerApp": {
+    "StateInquiry": {
+      "null": "",
+      "NORMAL": "NORMAL",
+      "ABNORMAL": "ABNORMAL",
+      "DELETE": "DELETE",
+      "COMPLETE": "COMPLETE"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "name": "AccommodationAmenity",
+    "fields": [
+        {
+            "fieldName": "amenityType",
+            "fieldType": "AmenityType",
+            "fieldValues": "KARAOKE,PC,CONVENIENCE,ATM"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "accommodation",
+            "otherEntityRelationshipName": "accommodationAmenity",
+            "relationshipName": "accommodation",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200109045637",
+    "entityTableName": "accommodation_amenity",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

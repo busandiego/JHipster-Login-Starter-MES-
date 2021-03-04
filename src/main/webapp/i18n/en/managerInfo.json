@@ -1,0 +1,25 @@
+{
+  "hotelgaServerApp": {
+    "managerInfo": {
+      "home": {
+        "title": "Manager Infos",
+        "createLabel": "Create a new Manager Info",
+        "createOrEditLabel": "Create or edit a Manager Info",
+        "notFound": "No Manager Infos found"
+      },
+      "created": "A new Manager Info is created with identifier {{ param }}",
+      "updated": "A Manager Info is updated with identifier {{ param }}",
+      "deleted": "A Manager Info is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Manager Info {{ id }}?"
+      },
+      "detail": {
+        "title": "Manager Info"
+      },
+      "managerNickName": "Manager Nick Name",
+      "managerRating": "Manager Rating",
+      "adminUser": "Admin User",
+      "affiliate": "Affiliate"
+    }
+  }
+}

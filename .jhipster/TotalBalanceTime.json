@@ -1,0 +1,42 @@
+{
+    "name": "TotalBalanceTime",
+    "fields": [
+        {
+            "fieldName": "balanceTime",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "affiliate",
+            "otherEntityRelationshipName": "totalBalanceTime",
+            "relationshipName": "affiliate",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "adminUser",
+            "otherEntityRelationshipName": "timeApplyManager",
+            "relationshipName": "timeApplyManager",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "adminUser",
+            "otherEntityRelationshipName": "settingUser",
+            "relationshipName": "settingUser",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200114085627",
+    "entityTableName": "total_balance_time",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

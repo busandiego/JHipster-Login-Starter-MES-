@@ -1,0 +1,63 @@
+{
+    "name": "Board",
+    "fields": [
+        {
+            "fieldName": "boardName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "boardType",
+            "fieldType": "BoardType",
+            "fieldValues": "FREE,ETC",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "readLevel",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "writeLevel",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "boardCreateDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "boardUdpateDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "borardState",
+            "fieldType": "StateBoard",
+            "fieldValues": "NORMAL,ABNORMAL,DELETE",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "adminUser",
+            "otherEntityRelationshipName": "board",
+            "relationshipName": "boardAdminUserId",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200110051353",
+    "entityTableName": "board",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,25 @@
+{
+  "hotelgaServerApp": {
+    "accommodationServiceInfo": {
+      "home": {
+        "title": "Accommodation Service Infos",
+        "createLabel": "Create a new Accommodation Service Info",
+        "createOrEditLabel": "Create or edit a Accommodation Service Info",
+        "notFound": "No Accommodation Service Infos found"
+      },
+      "created": "A new Accommodation Service Info is created with identifier {{ param }}",
+      "updated": "A Accommodation Service Info is updated with identifier {{ param }}",
+      "deleted": "A Accommodation Service Info is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Accommodation Service Info {{ id }}?"
+      },
+      "detail": {
+        "title": "Accommodation Service Info"
+      },
+      "serviceType": "Service Type",
+      "serviceStartDt": "Service Start Dt",
+      "serviceEndDt": "Service End Dt",
+      "accommodation": "Accommodation"
+    }
+  }
+}

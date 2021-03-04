@@ -1,0 +1,115 @@
+{
+    "name": "HoMember",
+    "fields": [
+        {
+            "fieldName": "memberLoginId",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "memberPassword",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "memberName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "memberNum",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "memberEmail",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "memberUUId",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "memberCreateDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "memberUpdateDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "joinInflow",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pushToken",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "memberAuth",
+            "fieldType": "AuthMember",
+            "fieldValues": "GUEST,NORMAL,VIP,VVIP",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "memberState",
+            "fieldType": "StateMember",
+            "fieldValues": "NORMAL,ABNORMAL,BLACK,DELETE",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "callAffiliate",
+            "otherEntityRelationshipName": "hoMember",
+            "relationshipName": "callAffiliate"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "couponHistories",
+            "otherEntityRelationshipName": "useMember",
+            "relationshipName": "couponUseMember"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "reviewRoom",
+            "otherEntityRelationshipName": "hoMember",
+            "relationshipName": "reviewRoom"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "customerInquiry",
+            "otherEntityRelationshipName": "hoMember",
+            "relationshipName": "customerInquiry"
+        }
+    ],
+    "changelogDate": "20200120072920",
+    "entityTableName": "ho_member",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

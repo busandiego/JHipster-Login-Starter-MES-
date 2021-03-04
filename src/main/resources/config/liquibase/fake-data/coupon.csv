@@ -1,0 +1,11 @@
+id;coupon_name;coupon_type;coupon_all_use;coupon_use_affiliate_id;coupon_amount_type;coupon_duplication;coupon_auto_publish;coupon_use_type_limit;coupon_use_type;coupon_use_price_limit;coupon_use_price;coupon_use_expire_limit;coupon_use_expire_month;coupon_create_dt;coupon_update_dt;coupon_current_published_dt;coupon_state
+1;mobile Fish;AFFILIATECOUPON;false;45924;TENTHOUSAND;false;true;true;RELAYRENT;true;30424;true;52475;2020-02-10T02:26:18;2020-02-09T16:14:29;2020-02-10T02:03:16;DELETE
+2;Steel zero administration;AFFILIATECOUPON;true;19967;THREETHOUSAND;false;true;true;DAYUSE;true;38541;false;1596;2020-02-10T00:15:49;2020-02-09T21:03:59;2020-02-09T10:11:11;NORMAL
+3;Investment Account;AFFILIATECOUPON;true;75536;TENTHOUSAND;false;true;true;DAYUSE;true;77513;false;93949;2020-02-09T17:07:28;2020-02-09T05:07:56;2020-02-09T04:22:06;DELETE
+4;sky blue Tasty Plastic Pizza;ABSOLUTECOUPON;true;35675;THREETHOUSAND;true;false;false;DAYUSE;true;39488;false;29348;2020-02-10T02:28:31;2020-02-10T02:16:12;2020-02-09T07:02:13;ABNORMAL
+5;1080p Checking Account Identity;AFFILIATECOUPON;true;44945;TENTHOUSAND;false;false;true;FULLRENT;true;63755;false;88721;2020-02-09T13:08:17;2020-02-09T15:16:29;2020-02-09T17:25:04;ABNORMAL
+6;synthesize Idaho compress;ABSOLUTECOUPON;false;10789;SEVENTHOUSAND;true;false;false;RELAYRENT;false;60441;false;53984;2020-02-09T08:28:29;2020-02-09T21:44:04;2020-02-09T21:07:00;DELETE
+7;Auto Loan Account modular Refined;ABSOLUTECOUPON;true;88328;FIVETHOUSAND;false;false;true;RELAYRENT;true;42710;false;81801;2020-02-09T18:08:47;2020-02-09T05:57:02;2020-02-09T19:17:35;DELETE
+8;supply-chains magenta;AFFILIATECOUPON;false;94290;THREETHOUSAND;true;true;true;DAYUSE;true;24687;false;69630;2020-02-09T14:40:26;2020-02-09T09:30:49;2020-02-09T19:23:13;DELETE
+9;mission-critical;AFFILIATECOUPON;false;68070;TENTHOUSAND;false;true;true;RELAYRENT;false;76161;false;23763;2020-02-09T20:47:46;2020-02-09T09:07:51;2020-02-09T07:19:58;NORMAL
+10;Solomon Islands Licensed;ABSOLUTECOUPON;true;59089;SEVENTHOUSAND;false;true;true;RELAYRENT;true;39757;false;51775;2020-02-09T04:07:36;2020-02-09T06:30:11;2020-02-09T23:18:27;ABNORMAL

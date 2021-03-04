@@ -1,0 +1,27 @@
+{
+  "hotelgaServerApp": {
+    "accommodationDescription": {
+      "home": {
+        "title": "Accommodation Descriptions",
+        "createLabel": "Create a new Accommodation Description",
+        "createOrEditLabel": "Create or edit a Accommodation Description",
+        "notFound": "No Accommodation Descriptions found"
+      },
+      "created": "A new Accommodation Description is created with identifier {{ param }}",
+      "updated": "A Accommodation Description is updated with identifier {{ param }}",
+      "deleted": "A Accommodation Description is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Accommodation Description {{ id }}?"
+      },
+      "detail": {
+        "title": "Accommodation Description"
+      },
+      "descriptionTitle": "Description Title",
+      "descriptionContents": "Description Contents",
+      "descriptionOrder": "Description Order",
+      "descriptionCreateDt": "Description Create Dt",
+      "descriptionUpdateDt": "Description Update Dt",
+      "accommodation": "Accommodation"
+    }
+  }
+}

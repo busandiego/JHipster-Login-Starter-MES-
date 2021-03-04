@@ -1,0 +1,48 @@
+{
+  "hotelgaServerApp": {
+    "accommodation": {
+      "home": {
+        "title": "Accommodations",
+        "createLabel": "Create a new Accommodation",
+        "createOrEditLabel": "Create or edit a Accommodation",
+        "notFound": "No Accommodations found"
+      },
+      "created": "A new Accommodation is created with identifier {{ param }}",
+      "updated": "A Accommodation is updated with identifier {{ param }}",
+      "deleted": "A Accommodation is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Accommodation {{ id }}?"
+      },
+      "detail": {
+        "title": "Accommodation"
+      },
+      "accommodationName": "Accommodation Name",
+      "promotionalPhrase": "Promotional Phrase",
+      "accommodationIntroTitle": "Accommodation Intro Title",
+      "accommodationIntroContents": "Accommodation Intro Contents",
+      "accommodationRoadAddress": "Accommodation Road Address",
+      "accommodationZipAddress": "Accommodation Zip Address",
+      "accommodationLineComment": "Accommodation Line Comment",
+      "accommodationFullRoom": "Accommodation Full Room",
+      "accommodationFullDayuse": "Accommodation Full Dayuse",
+      "accommodationType": "Accommodation Type",
+      "affiliateCheck": "Affiliate Check",
+      "accommodationCreateDt": "Accommodation Create Dt",
+      "accommodationUpdateDt": "Accommodation Update Dt",
+      "alignmentNum": "Alignment Num",
+      "accommodationLatitude": "Accommodation Latitude",
+      "accommodationLongitude": "Accommodation Longitude",
+      "accommodationPreReservation": "Accommodation Pre Reservation",
+      "accommodationPreReservationDate": "Accommodation Pre Reservation Date",
+      "accommodationState": "Accommodation State",
+      "adminUser": "Admin User",
+      "accommodationDescription": "Accommodation Description",
+      "accommodationImage": "Accommodation Image",
+      "accommodationAmenity": "Accommodation Amenity",
+      "accommodationServiceInfo": "Accommodation Service Info",
+      "rooms": "Rooms",
+      "accommodationSales": "Accommodation Sales",
+      "affiliate": "Affiliate"
+    }
+  }
+}

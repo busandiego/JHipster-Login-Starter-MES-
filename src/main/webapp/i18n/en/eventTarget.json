@@ -1,0 +1,11 @@
+{
+  "hotelgaServerApp": {
+    "EventTarget": {
+      "null": "",
+      "ALL": "ALL",
+      "SERVICE": "SERVICE",
+      "MANAGER": "MANAGER",
+      "AFFILIATE": "AFFILIATE"
+    }
+  }
+}

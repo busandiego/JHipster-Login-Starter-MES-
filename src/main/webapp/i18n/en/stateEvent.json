@@ -1,0 +1,10 @@
+{
+  "hotelgaServerApp": {
+    "StateEvent": {
+      "null": "",
+      "NORMAL": "NORMAL",
+      "ABNORMAL": "ABNORMAL",
+      "DELETE": "DELETE"
+    }
+  }
+}

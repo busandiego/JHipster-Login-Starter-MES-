@@ -1,0 +1,25 @@
+{
+  "hotelgaServerApp": {
+    "totalBalanceTime": {
+      "home": {
+        "title": "Total Balance Times",
+        "createLabel": "Create a new Total Balance Time",
+        "createOrEditLabel": "Create or edit a Total Balance Time",
+        "notFound": "No Total Balance Times found"
+      },
+      "created": "A new Total Balance Time is created with identifier {{ param }}",
+      "updated": "A Total Balance Time is updated with identifier {{ param }}",
+      "deleted": "A Total Balance Time is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Total Balance Time {{ id }}?"
+      },
+      "detail": {
+        "title": "Total Balance Time"
+      },
+      "balanceTime": "Balance Time",
+      "affiliate": "Affiliate",
+      "timeApplyManager": "Time Apply Manager",
+      "settingUser": "Setting User"
+    }
+  }
+}

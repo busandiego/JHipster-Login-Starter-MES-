@@ -1,0 +1,32 @@
+{
+  "hotelgaServerApp": {
+    "inviteCard": {
+      "home": {
+        "title": "Invite Cards",
+        "createLabel": "Create a new Invite Card",
+        "createOrEditLabel": "Create or edit a Invite Card",
+        "notFound": "No Invite Cards found"
+      },
+      "created": "A new Invite Card is created with identifier {{ param }}",
+      "updated": "A Invite Card is updated with identifier {{ param }}",
+      "deleted": "A Invite Card is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Invite Card {{ id }}?"
+      },
+      "detail": {
+        "title": "Invite Card"
+      },
+      "inviteName": "Invite Name",
+      "inviteSerial": "Invite Serial",
+      "inviteCreateDt": "Invite Create Dt",
+      "inviteExpirationDt": "Invite Expiration Dt",
+      "managerName": "Manager Name",
+      "accommodationName": "Accommodation Name",
+      "inflowNum": "Inflow Num",
+      "reservationNum": "Reservation Num",
+      "managerId": "Manager Id",
+      "accommodationId": "Accommodation Id",
+      "inviteCardState": "Invite Card State"
+    }
+  }
+}

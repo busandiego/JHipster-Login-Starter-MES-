@@ -1,0 +1,53 @@
+{
+    "name": "ApplyAffiliate",
+    "fields": [
+        {
+            "fieldName": "affiliateName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "applyName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "affiliateAddress",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "affiliateNum",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "applyDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "applyAffiliateState",
+            "fieldType": "StateApplyAffiliate",
+            "fieldValues": "WAITING,APPROVE,REFER"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200120072927",
+    "entityTableName": "apply_affiliate",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

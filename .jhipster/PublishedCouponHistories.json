@@ -1,0 +1,53 @@
+{
+  "name": "PublishedCouponHistories",
+  "fields": [
+    {
+      "fieldName": "publishedUniqCode",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "publishedCouponAmountType",
+      "fieldType": "CouponAmountType",
+      "fieldValues": "ONETHOUSAND,THREETHOUSAND,FIVETHOUSAND,SEVENTHOUSAND,TENTHOUSAND"
+    },
+    {
+      "fieldName": "useDt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "publishedCouponAllUse",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "publishedCouponUseAffiliateId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "publishedDt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "useCheck",
+      "fieldType": "Boolean",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "couponPublishedHistoriesId",
+      "fieldType": "Long"
+    }
+  ],
+  "entityTableName": "published_coupon_histories",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

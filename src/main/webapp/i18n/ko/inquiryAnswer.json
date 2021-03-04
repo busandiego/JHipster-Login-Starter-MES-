@@ -1,0 +1,27 @@
+{
+  "hotelgaServerApp": {
+    "inquiryAnswer": {
+      "home": {
+        "title": "Inquiry Answers",
+        "createLabel": "Create a new Inquiry Answer",
+        "createOrEditLabel": "Create or edit a Inquiry Answer",
+        "notFound": "No Inquiry Answers found"
+      },
+      "created": "A new Inquiry Answer is created with identifier {{ param }}",
+      "updated": "A Inquiry Answer is updated with identifier {{ param }}",
+      "deleted": "A Inquiry Answer is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Inquiry Answer {{ id }}?"
+      },
+      "detail": {
+        "title": "Inquiry Answer"
+      },
+      "inquiryAnswerTitle": "Inquiry Answer Title",
+      "inquiryAnswerContents": "Inquiry Answer Contents",
+      "inquiryAnswerCreateDt": "Inquiry Answer Create Dt",
+      "inquiryAnswerState": "Inquiry Answer State",
+      "customerInquiry": "Customer Inquiry",
+      "adminUser": "Admin User"
+    }
+  }
+}

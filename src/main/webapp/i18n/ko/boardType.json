@@ -1,0 +1,9 @@
+{
+  "hotelgaServerApp": {
+    "BoardType": {
+      "null": "",
+      "FREE": "FREE",
+      "ETC": "ETC"
+    }
+  }
+}

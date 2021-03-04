@@ -1,0 +1,12 @@
+{
+  "hotelgaServerApp": {
+    "ManagerRating": {
+      "null": "",
+      "BRONZE": "BRONZE",
+      "SILVER": "SILVER",
+      "GOLD": "GOLD",
+      "PLATINUM": "PLATINUM",
+      "DIAMOND": "DIAMOND"
+    }
+  }
+}

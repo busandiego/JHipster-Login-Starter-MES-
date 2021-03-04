@@ -1,0 +1,32 @@
+{
+  "hotelgaServerApp": {
+    "order": {
+      "home": {
+        "title": "Orders",
+        "createLabel": "Create a new Order",
+        "createOrEditLabel": "Create or edit a Order",
+        "notFound": "No Orders found"
+      },
+      "created": "A new Order is created with identifier {{ param }}",
+      "updated": "A Order is updated with identifier {{ param }}",
+      "deleted": "A Order is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Order {{ id }}?"
+      },
+      "detail": {
+        "title": "Order"
+      },
+      "orderUniqNum": "Order Uniq Num",
+      "orderUserName": "Order User Name",
+      "orderUserNum": "Order User Num",
+      "accommodationName": "Accommodation Name",
+      "roomName": "Room Name",
+      "roomPrice": "Room Price",
+      "roomDiscountPer": "Room Discount Per",
+      "orderCreateDt": "Order Create Dt",
+      "orderState": "Order State",
+      "orderMember": "Order Member",
+      "payment": "Payment"
+    }
+  }
+}

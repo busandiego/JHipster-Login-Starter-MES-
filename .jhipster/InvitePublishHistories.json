@@ -1,0 +1,39 @@
+{
+    "name": "InvitePublishHistories",
+    "fields": [
+        {
+            "fieldName": "responseAddress",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "publishedCheck",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "publishedDt",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "adminUser",
+            "otherEntityRelationshipName": "invitePublishHistories",
+            "relationshipName": "adminUser",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200113080846",
+    "entityTableName": "invite_publish_histories",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

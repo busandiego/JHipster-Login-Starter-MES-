@@ -1,0 +1,32 @@
+{
+  "hotelgaServerApp": {
+    "balanceByAffiliateDetails": {
+      "home": {
+        "title": "Balance By Affiliate Details",
+        "createLabel": "Create a new Balance By Affiliate Details",
+        "createOrEditLabel": "Create or edit a Balance By Affiliate Details",
+        "notFound": "No Balance By Affiliate Details found"
+      },
+      "created": "A new Balance By Affiliate Details is created with identifier {{ param }}",
+      "updated": "A Balance By Affiliate Details is updated with identifier {{ param }}",
+      "deleted": "A Balance By Affiliate Details is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Balance By Affiliate Details {{ id }}?"
+      },
+      "detail": {
+        "title": "Balance By Affiliate Details"
+      },
+      "reserveUserName": "Reserve User Name",
+      "reserveUserNum": "Reserve User Num",
+      "roomName": "Room Name",
+      "reservationDt": "Reservation Dt",
+      "sellingPrice": "Selling Price",
+      "couponDiscount": "Coupon Discount",
+      "couponType": "Coupon Type",
+      "commission": "Commission",
+      "paymentMoney": "Payment Money",
+      "balanceState": "Balance State",
+      "totalBalanceByAffiliate": "Total Balance By Affiliate"
+    }
+  }
+}

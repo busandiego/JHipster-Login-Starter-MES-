@@ -1,0 +1,31 @@
+{
+  "hotelgaServerApp": {
+    "affiliateMember": {
+      "home": {
+        "title": "Affiliate Members",
+        "createLabel": "Create a new Affiliate Member",
+        "createOrEditLabel": "Create or edit a Affiliate Member",
+        "notFound": "No Affiliate Members found"
+      },
+      "created": "A new Affiliate Member is created with identifier {{ param }}",
+      "updated": "A Affiliate Member is updated with identifier {{ param }}",
+      "deleted": "A Affiliate Member is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Affiliate Member {{ id }}?"
+      },
+      "detail": {
+        "title": "Affiliate Member"
+      },
+      "affiliateMemberLoginId": "Affiliate Member Login Id",
+      "affiliateMemberPassword": "Affiliate Member Password",
+      "affiliateMemberName": "Affiliate Member Name",
+      "affiliateMemberPhoneNum": "Affiliate Member Phone Num",
+      "affiliateMemberMemo": "Affiliate Member Memo",
+      "pushToken": "Push Token",
+      "createDt": "Create Dt",
+      "updateDt": "Update Dt",
+      "affiliateMemberState": "Affiliate Member State",
+      "affiliateId": "Affiliate Id"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+    "name": "ReviewRoom",
+    "fields": [
+        {
+            "fieldName": "reviewScore",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "reviewTitle",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "reviewContents",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "reviewCreateDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "reviewUpdateDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "reviewState",
+            "fieldType": "StateReview",
+            "fieldValues": "NORMAL,ABNORMAL,DELETE"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "reviewResponse",
+            "otherEntityRelationshipName": "reviewRoom",
+            "relationshipName": "reviewResponse"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "rooms",
+            "otherEntityRelationshipName": "reviewRoom",
+            "relationshipName": "rooms",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "hoMember",
+            "otherEntityRelationshipName": "reviewRoom",
+            "relationshipName": "hoMember",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200110095954",
+    "entityTableName": "review_room",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

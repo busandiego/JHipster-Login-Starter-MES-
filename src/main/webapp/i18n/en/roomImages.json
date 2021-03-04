@@ -1,0 +1,26 @@
+{
+  "hotelgaServerApp": {
+    "roomImages": {
+      "home": {
+        "title": "Room Images",
+        "createLabel": "Create a new Room Images",
+        "createOrEditLabel": "Create or edit a Room Images",
+        "notFound": "No Room Images found"
+      },
+      "created": "A new Room Images is created with identifier {{ param }}",
+      "updated": "A Room Images is updated with identifier {{ param }}",
+      "deleted": "A Room Images is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Room Images {{ id }}?"
+      },
+      "detail": {
+        "title": "Room Images"
+      },
+      "roomImageName": "Room Image Name",
+      "roomImagePath": "Room Image Path",
+      "roomImageCreateDt": "Room Image Create Dt",
+      "roomImageState": "Room Image State",
+      "rooms": "Rooms"
+    }
+  }
+}

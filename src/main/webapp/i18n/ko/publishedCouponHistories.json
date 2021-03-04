@@ -1,0 +1,29 @@
+{
+  "hotelgaServerApp": {
+    "publishedCouponHistories": {
+      "home": {
+        "title": "Published Coupon Histories",
+        "createLabel": "Create a new Published Coupon Histories",
+        "createOrEditLabel": "Create or edit a Published Coupon Histories",
+        "notFound": "No Published Coupon Histories found"
+      },
+      "created": "A new Published Coupon Histories is created with identifier {{ param }}",
+      "updated": "A Published Coupon Histories is updated with identifier {{ param }}",
+      "deleted": "A Published Coupon Histories is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Published Coupon Histories {{ id }}?"
+      },
+      "detail": {
+        "title": "Published Coupon Histories"
+      },
+      "publishedUniqCode": "Published Uniq Code",
+      "publishedCouponAmountType": "Published Coupon Amount Type",
+      "useDt": "Use Dt",
+      "publishedCouponAllUse": "Published Coupon All Use",
+      "publishedCouponUseAffiliateId": "Published Coupon Use Affiliate Id",
+      "publishedDt": "Published Dt",
+      "useCheck": "Use Check",
+      "couponPublishedHistoriesId": "Coupon Published Histories Id"
+    }
+  }
+}

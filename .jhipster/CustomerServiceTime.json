@@ -1,0 +1,24 @@
+{
+    "name": "CustomerServiceTime",
+    "fields": [
+        {
+            "fieldName": "csOpenTime",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "csCloseTIme",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200121065204",
+    "entityTableName": "customer_service_time",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

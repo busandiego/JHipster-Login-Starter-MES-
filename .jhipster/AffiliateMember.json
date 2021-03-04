@@ -1,0 +1,67 @@
+{
+  "name": "AffiliateMember",
+  "fields": [
+    {
+      "fieldName": "affiliateMemberLoginId",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "affiliateMemberPassword",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "affiliateMemberName",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "affiliateMemberPhoneNum",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "affiliateMemberMemo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "pushToken",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createDt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "updateDt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "affiliateMemberState",
+      "fieldType": "StateAffiliateMember",
+      "fieldValues": "NORMAL,ABNORMAL,DELETE"
+    },
+    {
+      "fieldName": "affiliateId",
+      "fieldType": "Long"
+    }
+  ],
+  "entityTableName": "affiliate_member",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

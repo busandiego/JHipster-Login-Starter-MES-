@@ -1,0 +1,23 @@
+{
+  "hotelgaServerApp": {
+    "adminUserRole": {
+      "home": {
+        "title": "Admin User Roles",
+        "createLabel": "Create a new Admin User Role",
+        "createOrEditLabel": "Create or edit a Admin User Role",
+        "notFound": "No Admin User Roles found"
+      },
+      "created": "A new Admin User Role is created with identifier {{ param }}",
+      "updated": "A Admin User Role is updated with identifier {{ param }}",
+      "deleted": "A Admin User Role is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Admin User Role {{ id }}?"
+      },
+      "detail": {
+        "title": "Admin User Role"
+      },
+      "roleType": "Role Type",
+      "adminUser": "Admin User"
+    }
+  }
+}

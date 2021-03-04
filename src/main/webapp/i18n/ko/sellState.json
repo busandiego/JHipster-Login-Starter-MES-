@@ -1,0 +1,10 @@
+{
+  "hotelgaServerApp": {
+    "SellState": {
+      "null": "",
+      "NORMAL": "NORMAL",
+      "ABNORMAL": "ABNORMAL",
+      "DELETE": "DELETE"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+    "name": "RoomPrice",
+    "fields": [
+        {
+            "fieldName": "applyStartDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "applyEndDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "applyDt",
+            "fieldType": "ZonedDateTime",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "roomNum",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "price",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "relayPrice",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "discountPer",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "relayAvailable",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "roomType",
+            "fieldType": "RoomType",
+            "fieldValues": "DAYUSE,FULLRENT",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "rooms",
+            "otherEntityRelationshipName": "roomPrice",
+            "relationshipName": "rooms",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200109071536",
+    "entityTableName": "room_price",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

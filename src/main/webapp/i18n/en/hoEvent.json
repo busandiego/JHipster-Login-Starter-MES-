@@ -1,0 +1,31 @@
+{
+  "hotelgaServerApp": {
+    "hoEvent": {
+      "home": {
+        "title": "Ho Events",
+        "createLabel": "Create a new Ho Event",
+        "createOrEditLabel": "Create or edit a Ho Event",
+        "notFound": "No Ho Events found"
+      },
+      "created": "A new Ho Event is created with identifier {{ param }}",
+      "updated": "A Ho Event is updated with identifier {{ param }}",
+      "deleted": "A Ho Event is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Ho Event {{ id }}?"
+      },
+      "detail": {
+        "title": "Ho Event"
+      },
+      "eventName": "Event Name",
+      "eventPageUrl": "Event Page Url",
+      "eventTarget": "Event Target",
+      "eventStartDt": "Event Start Dt",
+      "eventEndDt": "Event End Dt",
+      "eventCreateDt": "Event Create Dt",
+      "eventUpdateDt": "Event Update Dt",
+      "eventState": "Event State",
+      "hoEventImages": "Ho Event Images",
+      "adminUser": "Admin User"
+    }
+  }
+}

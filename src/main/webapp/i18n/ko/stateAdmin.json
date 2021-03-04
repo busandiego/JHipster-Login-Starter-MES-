@@ -1,0 +1,12 @@
+{
+  "hotelgaServerApp": {
+    "StateAdmin": {
+      "null": "",
+      "NORMAL": "NORMAL",
+      "ABNORMAL": "ABNORMAL",
+      "DELETE": "DELETE",
+      "WAITING": "WAITING",
+      "REFUSAL": "REFUSAL"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "hotelgaServerApp": {
+    "roomSellDetails": {
+      "home": {
+        "title": "Room Sell Details",
+        "createLabel": "Create a new Room Sell Details",
+        "createOrEditLabel": "Create or edit a Room Sell Details",
+        "notFound": "No Room Sell Details found"
+      },
+      "created": "A new Room Sell Details is created with identifier {{ param }}",
+      "updated": "A Room Sell Details is updated with identifier {{ param }}",
+      "deleted": "A Room Sell Details is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Room Sell Details {{ id }}?"
+      },
+      "detail": {
+        "title": "Room Sell Details"
+      },
+      "sellDt": "Sell Dt",
+      "sellAmount": "Sell Amount",
+      "sellSoldNum": "Sell Sold Num",
+      "sellStartTime": "Sell Start Time",
+      "sellEndTime": "Sell End Time",
+      "sellUseTime": "Sell Use Time",
+      "couponBoolean": "Coupon Boolean",
+      "sellState": "Sell State"
+    }
+  }
+}

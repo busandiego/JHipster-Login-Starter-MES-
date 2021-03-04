@@ -1,0 +1,31 @@
+{
+  "hotelgaServerApp": {
+    "boardDetails": {
+      "home": {
+        "title": "Board Details",
+        "createLabel": "Create a new Board Details",
+        "createOrEditLabel": "Create or edit a Board Details",
+        "notFound": "No Board Details found"
+      },
+      "created": "A new Board Details is created with identifier {{ param }}",
+      "updated": "A Board Details is updated with identifier {{ param }}",
+      "deleted": "A Board Details is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Board Details {{ id }}?"
+      },
+      "detail": {
+        "title": "Board Details"
+      },
+      "headCategory": "Head Category",
+      "title": "Title",
+      "contents": "Contents",
+      "createDt": "Create Dt",
+      "updateDt": "Update Dt",
+      "likeNum": "Like Num",
+      "dislikeNum": "Dislike Num",
+      "boardFile": "Board File",
+      "comment": "Comment",
+      "writeUserId": "Write User Id"
+    }
+  }
+}

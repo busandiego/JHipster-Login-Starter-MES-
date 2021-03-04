@@ -1,0 +1,12 @@
+{
+  "hotelgaServerApp": {
+    "CouponAmountType": {
+      "null": "",
+      "ONETHOUSAND": "ONETHOUSAND",
+      "THREETHOUSAND": "THREETHOUSAND",
+      "FIVETHOUSAND": "FIVETHOUSAND",
+      "SEVENTHOUSAND": "SEVENTHOUSAND",
+      "TENTHOUSAND": "TENTHOUSAND"
+    }
+  }
+}

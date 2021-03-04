@@ -1,0 +1,23 @@
+{
+  "name": "RoomSellInfo",
+  "fields": [
+    {
+      "fieldName": "roomSalesType",
+      "fieldType": "RoomSalesType",
+      "fieldValues": "DAYUSE,FULLRENT"
+    },
+    {
+      "fieldName": "roomId",
+      "fieldType": "Integer"
+    }
+  ],
+  "entityTableName": "room_sell_info",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

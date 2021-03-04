@@ -1,0 +1,101 @@
+{
+    "name": "Member",
+    "fields": [
+        {
+            "fieldName": "memberLoginId",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "memberPassword",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "memberName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "memberNum",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "memberEmail",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "memberUUId",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "memberCreateDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "memberUpdateDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "memberAuth",
+            "fieldType": "AuthMember",
+            "fieldValues": "GUEST,NORMAL,VIP,VVIP",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "memberState",
+            "fieldType": "StateMember",
+            "fieldValues": "NORMAL,ABNORMAL,BLACK,DELETE",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "couponHistories",
+            "otherEntityRelationshipName": "useMember",
+            "relationshipName": "couponUseMember"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "reviewRoom",
+            "otherEntityRelationshipName": "member",
+            "relationshipName": "reviewRoom"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "customerInquiry",
+            "otherEntityRelationshipName": "member",
+            "relationshipName": "customerInquiry"
+        }
+    ],
+    "changelogDate": "20200109045631",
+    "entityTableName": "member",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

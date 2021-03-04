@@ -1,0 +1,55 @@
+{
+    "name": "InquiryAnswer",
+    "fields": [
+        {
+            "fieldName": "inquiryAnswerTitle",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "inquiryAnswerContents",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "inquiryAnswerCreateDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "inquiryAnswerState",
+            "fieldType": "StateAnswer",
+            "fieldValues": "NORMAL,ABNORMAL,DELETE"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "customerInquiry",
+            "otherEntityRelationshipName": "inquiryAnswer",
+            "relationshipName": "customerInquiry",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "adminUser",
+            "otherEntityRelationshipName": "inquiryAnswer",
+            "relationshipName": "adminUser",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200113091944",
+    "entityTableName": "inquiry_answer",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

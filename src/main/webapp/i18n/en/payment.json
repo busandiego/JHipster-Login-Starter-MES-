@@ -1,0 +1,32 @@
+{
+  "hotelgaServerApp": {
+    "payment": {
+      "home": {
+        "title": "Payments",
+        "createLabel": "Create a new Payment",
+        "createOrEditLabel": "Create or edit a Payment",
+        "notFound": "No Payments found"
+      },
+      "created": "A new Payment is created with identifier {{ param }}",
+      "updated": "A Payment is updated with identifier {{ param }}",
+      "deleted": "A Payment is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Payment {{ id }}?"
+      },
+      "detail": {
+        "title": "Payment"
+      },
+      "sellingPrice": "Selling Price",
+      "commission": "Commission",
+      "paymentMoney": "Payment Money",
+      "paymentType": "Payment Type",
+      "paymentDt": "Payment Dt",
+      "couponDiscount": "Coupon Discount",
+      "transactionNum": "Transaction Num",
+      "paymentMethod": "Payment Method",
+      "remark": "Remark",
+      "reservationId": "Reservation Id",
+      "paymentState": "Payment State"
+    }
+  }
+}

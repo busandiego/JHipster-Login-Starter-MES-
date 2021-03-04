@@ -1,0 +1,31 @@
+{
+  "hotelgaServerApp": {
+    "roomPrice": {
+      "home": {
+        "title": "Room Prices",
+        "createLabel": "Create a new Room Price",
+        "createOrEditLabel": "Create or edit a Room Price",
+        "notFound": "No Room Prices found"
+      },
+      "created": "A new Room Price is created with identifier {{ param }}",
+      "updated": "A Room Price is updated with identifier {{ param }}",
+      "deleted": "A Room Price is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Room Price {{ id }}?"
+      },
+      "detail": {
+        "title": "Room Price"
+      },
+      "applyStartDt": "Apply Start Dt",
+      "applyEndDt": "Apply End Dt",
+      "applyDt": "Apply Dt",
+      "roomNum": "Room Num",
+      "price": "Price",
+      "relayPrice": "Relay Price",
+      "discountPer": "Discount Per",
+      "relayAvailable": "Relay Available",
+      "roomType": "Room Type",
+      "rooms": "Rooms"
+    }
+  }
+}

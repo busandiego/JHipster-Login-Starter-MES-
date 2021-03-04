@@ -1,0 +1,13 @@
+{
+  "hotelgaServerApp": {
+    "AuthorityType": {
+      "null": "",
+      "ACCOUNT": "ACCOUNT",
+      "CALCULATE": "CALCULATE",
+      "ACCOMMODATION": "ACCOMMODATION",
+      "AFFILIATE": "AFFILIATE",
+      "CUSTOMERSERVICE": "CUSTOMERSERVICE",
+      "MAINTENANCE": "MAINTENANCE"
+    }
+  }
+}

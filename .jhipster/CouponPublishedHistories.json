@@ -1,0 +1,69 @@
+{
+  "name": "CouponPublishedHistories",
+  "fields": [
+    {
+      "fieldName": "publishedName",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "totalPublishedNum",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "oneThousandNum",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "threeThousandNum",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "fiveThousandNum",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "sevenThousandNum",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "tenThousandNum",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "autoPublishedNum",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "totalPublishedPrice",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "publishedDt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "expireDt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "CouponPublishedHistoriesState",
+      "fieldType": "CouponPublishedHistoriesState",
+      "fieldValues": "NORMAL,ABNORMAL",
+      "fieldValidateRules": [
+        "required"
+      ]
+    }
+  ],
+  "entityTableName": "coupon_published_histories",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

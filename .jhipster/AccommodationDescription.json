@@ -1,0 +1,51 @@
+{
+    "name": "AccommodationDescription",
+    "fields": [
+        {
+            "fieldName": "descriptionTitle",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "descriptionContents",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "descriptionOrder",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "descriptionCreateDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "descriptionUpdateDt",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "accommodation",
+            "otherEntityRelationshipName": "accommodationDescription",
+            "relationshipName": "accommodation",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200120072934",
+    "entityTableName": "accommodation_description",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,12 @@
+{
+  "hotelgaServerApp": {
+    "StateOrder": {
+      "null": "",
+      "DEPOSITWAIT": "DEPOSITWAIT",
+      "RESERVATIONOK": "RESERVATIONOK",
+      "USEOK": "USEOK",
+      "RESERVATIONFAIL": "RESERVATIONFAIL",
+      "RESERVATIONCANCEL": "RESERVATIONCANCEL"
+    }
+  }
+}

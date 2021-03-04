@@ -1,0 +1,238 @@
+{
+    "name": "AdminUser",
+    "fields": [
+        {
+            "fieldName": "adminLoginId",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "adminPassword",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "adminName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "adminNick",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "adminNum",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "adminEmail",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "adminCreateDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "adminUpdateDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "pushToken",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "adminState",
+            "fieldType": "StateAdmin",
+            "fieldValues": "NORMAL,ABNORMAL,DELETE,WAITING,REFUSAL",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "adminUserRole",
+            "otherEntityRelationshipName": "adminUser",
+            "relationshipName": "adminUserRole"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "adminUserAuth",
+            "otherEntityRelationshipName": "adminUser",
+            "relationshipName": "adminUserAuth"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "couponHistories",
+            "otherEntityRelationshipName": "couponPublisher",
+            "relationshipName": "couponPublisher"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "accommodationSales",
+            "otherEntityRelationshipName": "salesUserId",
+            "relationshipName": "accommodationSales"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "board",
+            "otherEntityRelationshipName": "boardAdminUserId",
+            "relationshipName": "board"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "boardDetails",
+            "otherEntityRelationshipName": "writeUserId",
+            "relationshipName": "boardDetails"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "inquiryAnswer",
+            "otherEntityRelationshipName": "adminUser",
+            "relationshipName": "inquiryAnswer"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "terms",
+            "otherEntityRelationshipName": "adminUser",
+            "relationshipName": "terms"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "hoEvent",
+            "otherEntityRelationshipName": "adminUser",
+            "relationshipName": "hoEvent"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "hoNotice",
+            "otherEntityRelationshipName": "adminUser",
+            "relationshipName": "hoNotice"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "affiliateCommissionSetting",
+            "otherEntityRelationshipName": "adminUser",
+            "relationshipName": "affiliateCommissionSetting"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "managerCommissionSetting",
+            "otherEntityRelationshipName": "settingUser",
+            "relationshipName": "managerCommissionSettingUser"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "pGCommissionSetting",
+            "otherEntityRelationshipName": "settingUser",
+            "relationshipName": "pGCommissionSettingUser"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "pGCommissionSetting",
+            "otherEntityRelationshipName": "applyUser",
+            "relationshipName": "pGCommissionApplyUser"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "investmentCommissionSetting",
+            "otherEntityRelationshipName": "settingUser",
+            "relationshipName": "investmentCommissionSettingUser"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "investmentCommissionSetting",
+            "otherEntityRelationshipName": "applyUser",
+            "relationshipName": "investmentCommissionApplyUser"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "mileageSetting",
+            "otherEntityRelationshipName": "adminUser",
+            "relationshipName": "mileageSetting"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "inflowPath",
+            "otherEntityRelationshipName": "adminUser",
+            "relationshipName": "inflowPath"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "category",
+            "otherEntityRelationshipName": "adminUser",
+            "relationshipName": "category"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "bookmark",
+            "otherEntityRelationshipName": "adminUser",
+            "relationshipName": "bookmark"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "totalBalanceTime",
+            "otherEntityRelationshipName": "timeApplyManager",
+            "relationshipName": "timeApplyManager"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "totalBalanceTime",
+            "otherEntityRelationshipName": "settingUser",
+            "relationshipName": "settingUser"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "invitePublishHistories",
+            "otherEntityRelationshipName": "adminUser",
+            "relationshipName": "invitePublishHistories"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "affiliate",
+            "otherEntityRelationshipName": "adminUser",
+            "relationshipName": "affiliate",
+            "ownerSide": false
+        },
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "accommodation",
+            "otherEntityRelationshipName": "adminUser",
+            "relationshipName": "accommodation",
+            "ownerSide": false
+        },
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "faqBoard",
+            "otherEntityRelationshipName": "adminUser",
+            "relationshipName": "faqBoard",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20200109045632",
+    "entityTableName": "admin_user",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

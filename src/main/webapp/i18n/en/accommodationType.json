@@ -1,0 +1,9 @@
+{
+  "hotelgaServerApp": {
+    "AccommodationType": {
+      "null": "",
+      "MOTEL": "MOTEL",
+      "HOTEL": "HOTEL"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+    "name": "PGCommissionSetting",
+    "fields": [
+        {
+            "fieldName": "commissionPer",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "settingDt",
+            "fieldType": "ZonedDateTime",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "adminUser",
+            "otherEntityRelationshipName": "pGCommissionSettingUser",
+            "relationshipName": "settingUser",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "adminUser",
+            "otherEntityRelationshipName": "pGCommissionApplyUser",
+            "relationshipName": "applyUser",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200114064918",
+    "entityTableName": "pg_commission_setting",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

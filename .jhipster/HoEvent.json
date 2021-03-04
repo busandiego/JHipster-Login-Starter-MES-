@@ -1,0 +1,67 @@
+{
+    "name": "HoEvent",
+    "fields": [
+        {
+            "fieldName": "eventName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "eventPageUrl",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "eventTarget",
+            "fieldType": "EventTarget",
+            "fieldValues": "ALL,SERVICE,MANAGER,AFFILIATE"
+        },
+        {
+            "fieldName": "eventStartDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "eventEndDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "eventCreateDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "eventUpdateDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "eventState",
+            "fieldType": "StateEvent",
+            "fieldValues": "NORMAL,ABNORMAL,DELETE"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "hoEventImages",
+            "otherEntityRelationshipName": "hoEvent",
+            "relationshipName": "hoEventImages"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "adminUser",
+            "otherEntityRelationshipName": "hoEvent",
+            "relationshipName": "adminUser",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200113080847",
+    "entityTableName": "ho_event",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,22 @@
+{
+    "name": "AccommodationSales",
+    "fields": [
+      {
+        "fieldName": "accommodationId",
+        "fieldType": "Long"
+      },
+      {
+        "fieldName": "adminUserId",
+        "fieldType": "Long"
+      }
+    ],
+    "entityTableName": "accommodation_sales",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

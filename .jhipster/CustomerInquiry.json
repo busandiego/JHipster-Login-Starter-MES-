@@ -1,0 +1,66 @@
+{
+    "name": "CustomerInquiry",
+    "fields": [
+        {
+            "fieldName": "inquiryType",
+            "fieldType": "InquiryType",
+            "fieldValues": "PAYMENT,RESERVATION,EVENT,ETC",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "inquiryTitle",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "inquiryContents",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "inquiryCreateDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "inquiryState",
+            "fieldType": "StateInquiry",
+            "fieldValues": "NORMAL,ABNORMAL,DELETE,COMPLETE"
+        },
+        {
+            "fieldName": "answerCheck",
+            "fieldType": "Boolean"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "inquiryAnswer",
+            "otherEntityRelationshipName": "customerInquiry",
+            "relationshipName": "inquiryAnswer",
+            "ownerSide": false
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "hoMember",
+            "otherEntityRelationshipName": "customerInquiry",
+            "relationshipName": "hoMember",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200113091943",
+    "entityTableName": "customer_inquiry",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,23 @@
+{
+  "hotelgaServerApp": {
+    "customerServiceTime": {
+      "home": {
+        "title": "Customer Service Times",
+        "createLabel": "Create a new Customer Service Time",
+        "createOrEditLabel": "Create or edit a Customer Service Time",
+        "notFound": "No Customer Service Times found"
+      },
+      "created": "A new Customer Service Time is created with identifier {{ param }}",
+      "updated": "A Customer Service Time is updated with identifier {{ param }}",
+      "deleted": "A Customer Service Time is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Customer Service Time {{ id }}?"
+      },
+      "detail": {
+        "title": "Customer Service Time"
+      },
+      "csOpenTime": "Cs Open Time",
+      "csCloseTIme": "Cs Close T Ime"
+    }
+  }
+}

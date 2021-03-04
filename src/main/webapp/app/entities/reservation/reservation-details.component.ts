@@ -1,0 +1,30 @@
+import { Component, Inject, Vue } from 'vue-property-decorator';
+
+import { IReservation } from '@/shared/model/reservation.model';
+import ReservationService from './reservation.service';
+
+@Component
+export default class ReservationDetails extends Vue {
+  @Inject('reservationService') private reservationService: () => ReservationService;
+  public reservation: IReservation = {};
+
+  beforeRouteEnter(to, from, next) {
+    next(vm => {
+      if (to.params.reservationId) {
+        vm.retrieveReservation(to.params.reservationId);
+      }
+    });
+  }
+
+  public retrieveReservation(reservationId) {
+    this.reservationService()
+      .find(reservationId)
+      .then(res => {
+        this.reservation = res;
+      });
+  }
+
+  public previousState() {
+    this.$router.go(-1);
+  }
+}

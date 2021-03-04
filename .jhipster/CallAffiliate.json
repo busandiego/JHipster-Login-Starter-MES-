@@ -1,0 +1,39 @@
+{
+    "name": "CallAffiliate",
+    "fields": [
+        {
+            "fieldName": "startCallDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "endCallDt",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "hoMember",
+            "otherEntityRelationshipName": "callAffiliate",
+            "relationshipName": "hoMember",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "affiliate",
+            "otherEntityRelationshipName": "callAffiliate",
+            "relationshipName": "affiliate",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200121065205",
+    "entityTableName": "call_affiliate",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

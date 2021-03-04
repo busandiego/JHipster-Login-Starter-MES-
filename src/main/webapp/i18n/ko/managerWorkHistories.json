@@ -1,0 +1,26 @@
+{
+  "hotelgaServerApp": {
+    "managerWorkHistories": {
+      "home": {
+        "title": "Manager Work Histories",
+        "createLabel": "Create a new Manager Work Histories",
+        "createOrEditLabel": "Create or edit a Manager Work Histories",
+        "notFound": "No Manager Work Histories found"
+      },
+      "created": "A new Manager Work Histories is created with identifier {{ param }}",
+      "updated": "A Manager Work Histories is updated with identifier {{ param }}",
+      "deleted": "A Manager Work Histories is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Manager Work Histories {{ id }}?"
+      },
+      "detail": {
+        "title": "Manager Work Histories"
+      },
+      "joinDt": "Join Dt",
+      "resignationDt": "Resignation Dt",
+      "workState": "Work State",
+      "affiliate": "Affiliate",
+      "manager": "Manager"
+    }
+  }
+}

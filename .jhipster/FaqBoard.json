@@ -1,0 +1,54 @@
+{
+    "name": "FaqBoard",
+    "fields": [
+        {
+            "fieldName": "faqContents",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "faqAnswer",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "faqCreateDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "faqUpdateDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "faqType",
+            "fieldType": "FaqType",
+            "fieldValues": "PAYMENT,RESERVATION,EVENT"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "adminUser",
+            "otherEntityRelationshipName": "faqBoard",
+            "relationshipName": "adminUser",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20200113091942",
+    "entityTableName": "faq_board",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

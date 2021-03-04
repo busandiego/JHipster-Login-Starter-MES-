@@ -1,0 +1,26 @@
+{
+  "hotelgaServerApp": {
+    "mileageSetting": {
+      "home": {
+        "title": "Mileage Settings",
+        "createLabel": "Create a new Mileage Setting",
+        "createOrEditLabel": "Create or edit a Mileage Setting",
+        "notFound": "No Mileage Settings found"
+      },
+      "created": "A new Mileage Setting is created with identifier {{ param }}",
+      "updated": "A Mileage Setting is updated with identifier {{ param }}",
+      "deleted": "A Mileage Setting is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Mileage Setting {{ id }}?"
+      },
+      "detail": {
+        "title": "Mileage Setting"
+      },
+      "mileagePerMin": "Mileage Per Min",
+      "mileagePerMax": "Mileage Per Max",
+      "settingDt": "Setting Dt",
+      "adminUser": "Admin User",
+      "affiliate": "Affiliate"
+    }
+  }
+}

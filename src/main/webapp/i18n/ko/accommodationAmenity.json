@@ -1,0 +1,23 @@
+{
+  "hotelgaServerApp": {
+    "accommodationAmenity": {
+      "home": {
+        "title": "Accommodation Amenities",
+        "createLabel": "Create a new Accommodation Amenity",
+        "createOrEditLabel": "Create or edit a Accommodation Amenity",
+        "notFound": "No Accommodation Amenities found"
+      },
+      "created": "A new Accommodation Amenity is created with identifier {{ param }}",
+      "updated": "A Accommodation Amenity is updated with identifier {{ param }}",
+      "deleted": "A Accommodation Amenity is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Accommodation Amenity {{ id }}?"
+      },
+      "detail": {
+        "title": "Accommodation Amenity"
+      },
+      "amenityType": "Amenity Type",
+      "accommodation": "Accommodation"
+    }
+  }
+}

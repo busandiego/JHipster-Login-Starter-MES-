@@ -1,0 +1,26 @@
+{
+  "hotelgaServerApp": {
+    "accommodationImage": {
+      "home": {
+        "title": "Accommodation Images",
+        "createLabel": "Create a new Accommodation Image",
+        "createOrEditLabel": "Create or edit a Accommodation Image",
+        "notFound": "No Accommodation Images found"
+      },
+      "created": "A new Accommodation Image is created with identifier {{ param }}",
+      "updated": "A Accommodation Image is updated with identifier {{ param }}",
+      "deleted": "A Accommodation Image is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Accommodation Image {{ id }}?"
+      },
+      "detail": {
+        "title": "Accommodation Image"
+      },
+      "imageName": "Image Name",
+      "imagePath": "Image Path",
+      "createDt": "Create Dt",
+      "alignmentNum": "Alignment Num",
+      "accommodation": "Accommodation"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "hotelgaServerApp": {
+    "AuthAdmin": {
+      "null": "",
+      "ADMIN": "ADMIN",
+      "MANAGER": "MANAGER",
+      "PARTNER": "PARTNER"
+    }
+  }
+}

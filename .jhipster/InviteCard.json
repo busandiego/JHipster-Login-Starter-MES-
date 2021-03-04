@@ -1,0 +1,65 @@
+{
+  "name": "InviteCard",
+  "fields": [
+    {
+      "fieldName": "inviteName",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "inviteSerial",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "inviteCreateDt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "inviteExpirationDt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "managerName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accommodationName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "inflowNum",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "reservationNum",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "managerId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "accommodationId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "inviteCardState",
+      "fieldType": "InviteCardState",
+      "fieldValues": "NORMAL,ABNORMAL,DELETE,WAITING",
+      "fieldValidateRules": [
+        "required"
+      ]
+    }
+  ],
+  "entityTableName": "invite_card",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

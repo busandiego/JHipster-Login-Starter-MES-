@@ -1,0 +1,77 @@
+{
+  "name": "Payment",
+  "fields": [
+    {
+      "fieldName": "sellingPrice",
+      "fieldType": "Integer",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "commission",
+      "fieldType": "Integer",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "paymentMoney",
+      "fieldType": "Integer",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "paymentType",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "paymentDt",
+      "fieldType": "ZonedDateTime",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "couponDiscount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "transactionNum",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "paymentMethod",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "remark",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "reservationId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "paymentState",
+      "fieldType": "StatePayment",
+      "fieldValues": "NORMAL,ABNORMAL,DELETE",
+      "fieldValidateRules": [
+        "required"
+      ]
+    }
+  ],
+  "entityTableName": "payment",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

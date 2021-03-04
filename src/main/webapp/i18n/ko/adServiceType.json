@@ -1,0 +1,9 @@
+{
+  "hotelgaServerApp": {
+    "AdServiceType": {
+      "null": "",
+      "SEASON": "SEASON",
+      "HOLIDAY": "HOLIDAY"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+    "name": "BoardDetails",
+    "fields": [
+        {
+            "fieldName": "headCategory",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "title",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "contents",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "createDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "updateDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "likeNum",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "dislikeNum",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "boardFile",
+            "otherEntityRelationshipName": "boardDetails",
+            "relationshipName": "boardFile"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "comment",
+            "otherEntityRelationshipName": "boardDetails",
+            "relationshipName": "comment"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "adminUser",
+            "otherEntityRelationshipName": "boardDetails",
+            "relationshipName": "writeUserId",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200110051354",
+    "entityTableName": "board_details",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

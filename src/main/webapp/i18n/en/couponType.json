@@ -1,0 +1,9 @@
+{
+  "hotelgaServerApp": {
+    "CouponType": {
+      "null": "",
+      "AFFILIATECOUPON": "AFFILIATECOUPON",
+      "ABSOLUTECOUPON": "ABSOLUTECOUPON"
+    }
+  }
+}

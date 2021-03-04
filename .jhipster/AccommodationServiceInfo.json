@@ -1,0 +1,40 @@
+{
+    "name": "AccommodationServiceInfo",
+    "fields": [
+        {
+            "fieldName": "serviceType",
+            "fieldType": "AdServiceType",
+            "fieldValues": "SEASON,HOLIDAY",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "serviceStartDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "serviceEndDt",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "accommodation",
+            "otherEntityRelationshipName": "accommodationServiceInfo",
+            "relationshipName": "accommodation",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200109045638",
+    "entityTableName": "accommodation_service_info",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

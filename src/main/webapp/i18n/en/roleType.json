@@ -1,0 +1,13 @@
+{
+  "hotelgaServerApp": {
+    "RoleType": {
+      "null": "",
+      "SYSTEM": "SYSTEM",
+      "BUSINESS": "BUSINESS",
+      "CS": "CS",
+      "HR": "HR",
+      "CONTRACT": "CONTRACT",
+      "ACCOUNTING": "ACCOUNTING"
+    }
+  }
+}

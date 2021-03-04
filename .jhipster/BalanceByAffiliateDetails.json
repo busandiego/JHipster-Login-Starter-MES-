@@ -1,0 +1,96 @@
+{
+    "name": "BalanceByAffiliateDetails",
+    "fields": [
+        {
+            "fieldName": "reserveUserName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "reserveUserNum",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "roomName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "reservationDt",
+            "fieldType": "ZonedDateTime",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "sellingPrice",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "couponDiscount",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "couponType",
+            "fieldType": "CouponType",
+            "fieldValues": "AFFILIATECOUPON,ABSOLUTECOUPON",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "commission",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "paymentMoney",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "balanceState",
+            "fieldType": "StateBalance",
+            "fieldValues": "NORMAL,ABNORMAL,COMPLETE,FAIL,DELETE",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "totalBalanceByAffiliate",
+            "otherEntityRelationshipName": "balanceByAffiliateDetails",
+            "relationshipName": "totalBalanceByAffiliate",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200114015153",
+    "entityTableName": "balance_by_affiliate_details",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

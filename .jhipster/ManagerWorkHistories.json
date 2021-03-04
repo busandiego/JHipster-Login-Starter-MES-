@@ -1,0 +1,44 @@
+{
+    "name": "ManagerWorkHistories",
+    "fields": [
+        {
+            "fieldName": "joinDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "resignationDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "workState",
+            "fieldType": "StateWork",
+            "fieldValues": "INOFFICE,RESIGNATION"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "affiliate",
+            "otherEntityRelationshipName": "managerWorkHistories",
+            "relationshipName": "affiliate",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "manager",
+            "otherEntityRelationshipName": "managerWorkHistories",
+            "relationshipName": "manager",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200114064844",
+    "entityTableName": "manager_work_histories",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

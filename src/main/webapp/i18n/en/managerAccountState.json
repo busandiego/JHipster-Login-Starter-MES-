@@ -1,0 +1,11 @@
+{
+  "hotelgaServerApp": {
+    "ManagerAccountState": {
+      "null": "",
+      "NORMAL": "NORMAL",
+      "ABNORMAL": "ABNORMAL",
+      "WAITING": "WAITING",
+      "DELETE": "DELETE"
+    }
+  }
+}

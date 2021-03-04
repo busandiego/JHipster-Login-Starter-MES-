@@ -1,0 +1,135 @@
+{
+  "name": "Reservation",
+  "fields": [
+    {
+      "fieldName": "orderUniqNum",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "orderUserName",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "orderUserNum",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "transportation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accommodationName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "roomName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "reservationPrice",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "roomDiscountPer",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "couponApply",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "couponName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "couponDiscountPrice",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "couponType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "paymentPrice",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "paymentType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "affiliateCommission",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "managerCommission",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "investmentCommission",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "useStartTime",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "useEndTime",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "orderCreateDt",
+      "fieldType": "ZonedDateTime",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "checkInDt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "checkOutDt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "orderState",
+      "fieldType": "StateOrder",
+      "fieldValues": "DEPOSITWAIT, RESERVATIONOK, USEOK, RESERVATIONFAIL, RESERVATIONCANCEL"
+    },
+    {
+      "fieldName": "hoMemberId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "managerId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "affiliateId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "accommodationId",
+      "fieldType": "Long"
+    }
+  ],
+  "entityTableName": "reservation",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

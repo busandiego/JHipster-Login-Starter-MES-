@@ -1,0 +1,27 @@
+{
+  "hotelgaServerApp": {
+    "inflowPath": {
+      "home": {
+        "title": "Inflow Paths",
+        "createLabel": "Create a new Inflow Path",
+        "createOrEditLabel": "Create or edit a Inflow Path",
+        "notFound": "No Inflow Paths found"
+      },
+      "created": "A new Inflow Path is created with identifier {{ param }}",
+      "updated": "A Inflow Path is updated with identifier {{ param }}",
+      "deleted": "A Inflow Path is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Inflow Path {{ id }}?"
+      },
+      "detail": {
+        "title": "Inflow Path"
+      },
+      "inflowPathName": "Inflow Path Name",
+      "codeName": "Code Name",
+      "createDt": "Create Dt",
+      "updateDt": "Update Dt",
+      "inflowPathState": "Inflow Path State",
+      "adminUser": "Admin User"
+    }
+  }
+}

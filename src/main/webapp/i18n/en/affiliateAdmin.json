@@ -1,0 +1,29 @@
+{
+  "hotelgaServerApp": {
+    "affiliateAdmin": {
+      "home": {
+        "title": "Affiliate Admins",
+        "createLabel": "Create a new Affiliate Admin",
+        "createOrEditLabel": "Create or edit a Affiliate Admin",
+        "notFound": "No Affiliate Admins found"
+      },
+      "created": "A new Affiliate Admin is created with identifier {{ param }}",
+      "updated": "A Affiliate Admin is updated with identifier {{ param }}",
+      "deleted": "A Affiliate Admin is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Affiliate Admin {{ id }}?"
+      },
+      "detail": {
+        "title": "Affiliate Admin"
+      },
+      "affiliateAdminLoginId": "Affiliate Admin Login Id",
+      "affiliateAdminPassowrd": "Affiliate Admin Passowrd",
+      "affiliateAdminEmail": "Affiliate Admin Email",
+      "pushToken": "Push Token",
+      "createDt": "Create Dt",
+      "updateDt": "Update Dt",
+      "affiliateAdminState": "Affiliate Admin State",
+      "affiliate": "Affiliate"
+    }
+  }
+}

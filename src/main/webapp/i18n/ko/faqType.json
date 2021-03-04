@@ -1,0 +1,10 @@
+{
+  "hotelgaServerApp": {
+    "FaqType": {
+      "null": "",
+      "PAYMENT": "PAYMENT",
+      "RESERVATION": "RESERVATION",
+      "EVENT": "EVENT"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "hotelgaServerApp": {
+    "reservation": {
+      "home": {
+        "title": "Reservations",
+        "createLabel": "Create a new Reservation",
+        "createOrEditLabel": "Create or edit a Reservation",
+        "notFound": "No Reservations found"
+      },
+      "created": "A new Reservation is created with identifier {{ param }}",
+      "updated": "A Reservation is updated with identifier {{ param }}",
+      "deleted": "A Reservation is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Reservation {{ id }}?"
+      },
+      "detail": {
+        "title": "Reservation"
+      },
+      "orderUniqNum": "Order Uniq Num",
+      "orderUserName": "Order User Name",
+      "orderUserNum": "Order User Num",
+      "transportation": "Transportation",
+      "accommodationName": "Accommodation Name",
+      "roomName": "Room Name",
+      "reservationPrice": "Reservation Price",
+      "roomDiscountPer": "Room Discount Per",
+      "couponApply": "Coupon Apply",
+      "couponName": "Coupon Name",
+      "couponDiscountPrice": "Coupon Discount Price",
+      "couponType": "Coupon Type",
+      "paymentPrice": "Payment Price",
+      "paymentType": "Payment Type",
+      "affiliateCommission": "Affiliate Commission",
+      "managerCommission": "Manager Commission",
+      "investmentCommission": "Investment Commission",
+      "useStartTime": "Use Start Time",
+      "useEndTime": "Use End Time",
+      "orderCreateDt": "Order Create Dt",
+      "checkInDt": "Check In Dt",
+      "checkOutDt": "Check Out Dt",
+      "orderState": "Order State",
+      "hoMemberId": "Ho Member Id",
+      "managerId": "Manager Id",
+      "affiliateId": "Affiliate Id",
+      "accommodationId": "Accommodation Id"
+    }
+  }
+}

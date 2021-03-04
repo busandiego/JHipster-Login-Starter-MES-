@@ -1,0 +1,9 @@
+{
+  "hotelgaServerApp": {
+    "StateWork": {
+      "null": "",
+      "INOFFICE": "INOFFICE",
+      "RESIGNATION": "RESIGNATION"
+    }
+  }
+}

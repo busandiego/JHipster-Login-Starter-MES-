@@ -1,0 +1,10 @@
+{
+  "hotelgaServerApp": {
+    "StateAccommodation": {
+      "null": "",
+      "NORMAL": "NORMAL",
+      "ABNORMAL": "ABNORMAL",
+      "DELETE": "DELETE"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+    "name": "Terms",
+    "fields": [
+        {
+            "fieldName": "termsType",
+            "fieldType": "TermsType",
+            "fieldValues": "SERIVCE,PERSNALINFO,GPSINFO,FINANCEINFO,YOUTHPROTECT"
+        },
+        {
+            "fieldName": "termsTarget",
+            "fieldType": "TermsTarget",
+            "fieldValues": "ALL,SERVICE,AFFILIATE,MANAGER"
+        },
+        {
+            "fieldName": "termsFileName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "termsPath",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "termsCreateDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "termsUpdateDt",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "adminUser",
+            "otherEntityRelationshipName": "terms",
+            "relationshipName": "adminUser",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200114064915",
+    "entityTableName": "terms",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

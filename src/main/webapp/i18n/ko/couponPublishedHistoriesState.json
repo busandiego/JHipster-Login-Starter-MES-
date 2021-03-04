@@ -1,0 +1,9 @@
+{
+  "hotelgaServerApp": {
+    "CouponPublishedHistoriesState": {
+      "null": "",
+      "NORMAL": "NORMAL",
+      "ABNORMAL": "ABNORMAL"
+    }
+  }
+}

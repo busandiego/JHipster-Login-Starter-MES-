@@ -1,0 +1,33 @@
+{
+    "name": "PublishedCouponHistories",
+    "fields": [
+        {
+            "fieldName": "publishedUniqCode",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "publishedDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "useCheck",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20200109071538",
+    "entityTableName": "coupon_histories",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

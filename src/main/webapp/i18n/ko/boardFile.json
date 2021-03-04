@@ -1,0 +1,25 @@
+{
+  "hotelgaServerApp": {
+    "boardFile": {
+      "home": {
+        "title": "Board Files",
+        "createLabel": "Create a new Board File",
+        "createOrEditLabel": "Create or edit a Board File",
+        "notFound": "No Board Files found"
+      },
+      "created": "A new Board File is created with identifier {{ param }}",
+      "updated": "A Board File is updated with identifier {{ param }}",
+      "deleted": "A Board File is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Board File {{ id }}?"
+      },
+      "detail": {
+        "title": "Board File"
+      },
+      "fileName": "File Name",
+      "filePath": "File Path",
+      "createDt": "Create Dt",
+      "boardDetails": "Board Details"
+    }
+  }
+}

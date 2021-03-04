@@ -1,0 +1,49 @@
+{
+    "name": "ManagerAccount",
+    "fields": [
+        {
+            "fieldName": "managerAccountNum",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "managerAccountBank",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "managerAccountOnwer",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "managerAccountApplyDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "managerAccountDecideDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "managerAccountState",
+            "fieldType": "ManagerAccountState",
+            "fieldValues": "NORMAL,ABNORMAL,WAITING,DELETE"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "manager",
+            "otherEntityRelationshipName": "managerAccount",
+            "relationshipName": "manager",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200120093020",
+    "entityTableName": "manager_account",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

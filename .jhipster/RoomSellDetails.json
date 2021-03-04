@@ -1,0 +1,50 @@
+{
+  "name": "RoomSellDetails",
+  "fields": [
+    {
+      "fieldName": "sellDt",
+      "fieldType": "ZonedDateTime",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "sellAmount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "sellSoldNum",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "sellStartTime",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "sellEndTime",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "sellUseTime",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "couponBoolean",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "sellState",
+      "fieldType": "SellState",
+      "fieldValues": "NORMAL,ABNORMAL,DELETE"
+    }
+  ],
+  "entityTableName": "room_sell_details",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

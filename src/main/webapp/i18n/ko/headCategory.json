@@ -1,0 +1,24 @@
+{
+  "hotelgaServerApp": {
+    "headCategory": {
+      "home": {
+        "title": "Head Categories",
+        "createLabel": "Create a new Head Category",
+        "createOrEditLabel": "Create or edit a Head Category",
+        "notFound": "No Head Categories found"
+      },
+      "created": "A new Head Category is created with identifier {{ param }}",
+      "updated": "A Head Category is updated with identifier {{ param }}",
+      "deleted": "A Head Category is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Head Category {{ id }}?"
+      },
+      "detail": {
+        "title": "Head Category"
+      },
+      "headCategoryName": "Head Category Name",
+      "createDt": "Create Dt",
+      "state": "State"
+    }
+  }
+}

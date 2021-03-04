@@ -1,0 +1,57 @@
+{
+  "hotelgaServerApp": {
+    "adminUser": {
+      "home": {
+        "title": "Admin Users",
+        "createLabel": "Create a new Admin User",
+        "createOrEditLabel": "Create or edit a Admin User",
+        "notFound": "No Admin Users found"
+      },
+      "created": "A new Admin User is created with identifier {{ param }}",
+      "updated": "A Admin User is updated with identifier {{ param }}",
+      "deleted": "A Admin User is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Admin User {{ id }}?"
+      },
+      "detail": {
+        "title": "Admin User"
+      },
+      "adminLoginId": "Admin Login Id",
+      "adminPassword": "Admin Password",
+      "adminName": "Admin Name",
+      "adminNick": "Admin Nick",
+      "adminNum": "Admin Num",
+      "adminEmail": "Admin Email",
+      "adminCreateDt": "Admin Create Dt",
+      "adminUpdateDt": "Admin Update Dt",
+      "pushToken": "Push Token",
+      "adminState": "Admin State",
+      "adminUserRole": "Admin User Role",
+      "adminUserAuth": "Admin User Auth",
+      "couponPublisher": "Coupon Publisher",
+      "accommodationSales": "Accommodation Sales",
+      "board": "Board",
+      "boardDetails": "Board Details",
+      "inquiryAnswer": "Inquiry Answer",
+      "terms": "Terms",
+      "hoEvent": "Ho Event",
+      "hoNotice": "Ho Notice",
+      "affiliateCommissionSetting": "Affiliate Commission Setting",
+      "managerCommissionSettingUser": "Manager Commission Setting User",
+      "pGCommissionSettingUser": "P G Commission Setting User",
+      "pGCommissionApplyUser": "P G Commission Apply User",
+      "investmentCommissionSettingUser": "Investment Commission Setting User",
+      "investmentCommissionApplyUser": "Investment Commission Apply User",
+      "mileageSetting": "Mileage Setting",
+      "inflowPath": "Inflow Path",
+      "category": "Category",
+      "bookmark": "Bookmark",
+      "timeApplyManager": "Time Apply Manager",
+      "settingUser": "Setting User",
+      "invitePublishHistories": "Invite Publish Histories",
+      "affiliate": "Affiliate",
+      "accommodation": "Accommodation",
+      "faqBoard": "Faq Board"
+    }
+  }
+}

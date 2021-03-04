@@ -1,0 +1,12 @@
+{
+  "hotelgaServerApp": {
+    "TermsType": {
+      "null": "",
+      "SERIVCE": "SERIVCE",
+      "PERSNALINFO": "PERSNALINFO",
+      "GPSINFO": "GPSINFO",
+      "FINANCEINFO": "FINANCEINFO",
+      "YOUTHPROTECT": "YOUTHPROTECT"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+    "name": "ReviewResponse",
+    "fields": [
+        {
+            "fieldName": "reviewResponseTitle",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "reviewResponseContents",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "reviewResponseCreateDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "reviewResponseState",
+            "fieldType": "StateReviewResponse",
+            "fieldValues": "NORMAL,ABNORMAL,DELETE",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "reviewRoom",
+            "otherEntityRelationshipName": "reviewResponse",
+            "relationshipName": "reviewRoom",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200110095955",
+    "entityTableName": "review_response",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

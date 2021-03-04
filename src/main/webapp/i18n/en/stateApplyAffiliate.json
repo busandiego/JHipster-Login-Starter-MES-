@@ -1,0 +1,10 @@
+{
+  "hotelgaServerApp": {
+    "StateApplyAffiliate": {
+      "null": "",
+      "WAITING": "WAITING",
+      "APPROVE": "APPROVE",
+      "REFER": "REFER"
+    }
+  }
+}

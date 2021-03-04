@@ -1,0 +1,62 @@
+{
+    "name": "AffiliateAdmin",
+    "fields": [
+        {
+            "fieldName": "affiliateAdminLoginId",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "affiliateAdminPassowrd",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "affiliateAdminEmail",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "pushToken",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "updateDt",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "affiliateAdminState",
+            "fieldType": "StateAffiliateAdmin",
+            "fieldValues": "NORMAL,ABNORMAL,DELETE"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "affiliate",
+            "otherEntityRelationshipName": "affiliateAdmin",
+            "relationshipName": "affiliate",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200120072928",
+    "entityTableName": "affiliate_admin",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

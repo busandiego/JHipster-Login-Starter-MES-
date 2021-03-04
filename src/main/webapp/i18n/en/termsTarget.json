@@ -1,0 +1,11 @@
+{
+  "hotelgaServerApp": {
+    "TermsTarget": {
+      "null": "",
+      "ALL": "ALL",
+      "SERVICE": "SERVICE",
+      "AFFILIATE": "AFFILIATE",
+      "MANAGER": "MANAGER"
+    }
+  }
+}

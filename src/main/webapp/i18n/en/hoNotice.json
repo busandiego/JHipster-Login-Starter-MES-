@@ -1,0 +1,26 @@
+{
+  "hotelgaServerApp": {
+    "hoNotice": {
+      "home": {
+        "title": "Ho Notices",
+        "createLabel": "Create a new Ho Notice",
+        "createOrEditLabel": "Create or edit a Ho Notice",
+        "notFound": "No Ho Notices found"
+      },
+      "created": "A new Ho Notice is created with identifier {{ param }}",
+      "updated": "A Ho Notice is updated with identifier {{ param }}",
+      "deleted": "A Ho Notice is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Ho Notice {{ id }}?"
+      },
+      "detail": {
+        "title": "Ho Notice"
+      },
+      "noticeTitle": "Notice Title",
+      "noticeContents": "Notice Contents",
+      "noticeVisiblity": "Notice Visiblity",
+      "noticeVisibleAuth": "Notice Visible Auth",
+      "adminUser": "Admin User"
+    }
+  }
+}

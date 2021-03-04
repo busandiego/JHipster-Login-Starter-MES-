@@ -1,0 +1,29 @@
+{
+  "hotelgaServerApp": {
+    "customerInquiry": {
+      "home": {
+        "title": "Customer Inquiries",
+        "createLabel": "Create a new Customer Inquiry",
+        "createOrEditLabel": "Create or edit a Customer Inquiry",
+        "notFound": "No Customer Inquiries found"
+      },
+      "created": "A new Customer Inquiry is created with identifier {{ param }}",
+      "updated": "A Customer Inquiry is updated with identifier {{ param }}",
+      "deleted": "A Customer Inquiry is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Customer Inquiry {{ id }}?"
+      },
+      "detail": {
+        "title": "Customer Inquiry"
+      },
+      "inquiryType": "Inquiry Type",
+      "inquiryTitle": "Inquiry Title",
+      "inquiryContents": "Inquiry Contents",
+      "inquiryCreateDt": "Inquiry Create Dt",
+      "inquiryState": "Inquiry State",
+      "answerCheck": "Answer Check",
+      "inquiryAnswer": "Inquiry Answer",
+      "hoMember": "Ho Member"
+    }
+  }
+}

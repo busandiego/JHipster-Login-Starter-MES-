@@ -1,0 +1,26 @@
+{
+  "hotelgaServerApp": {
+    "reviewResponse": {
+      "home": {
+        "title": "Review Responses",
+        "createLabel": "Create a new Review Response",
+        "createOrEditLabel": "Create or edit a Review Response",
+        "notFound": "No Review Responses found"
+      },
+      "created": "A new Review Response is created with identifier {{ param }}",
+      "updated": "A Review Response is updated with identifier {{ param }}",
+      "deleted": "A Review Response is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Review Response {{ id }}?"
+      },
+      "detail": {
+        "title": "Review Response"
+      },
+      "reviewResponseTitle": "Review Response Title",
+      "reviewResponseContents": "Review Response Contents",
+      "reviewResponseCreateDt": "Review Response Create Dt",
+      "reviewResponseState": "Review Response State",
+      "reviewRoom": "Review Room"
+    }
+  }
+}
