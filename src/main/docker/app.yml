@@ -1,16 +1,16 @@
 version: '2'
 services:
-  hotelga_server-app:
-    image: hotelga_server
+  wmes_server-app:
+    image: wmes_server
     environment:
       - _JAVA_OPTIONS=-Xmx512m -Xms256m
       - SPRING_PROFILES_ACTIVE=prod,swagger
       - MANAGEMENT_METRICS_EXPORT_PROMETHEUS_ENABLED=true
-      - SPRING_DATASOURCE_URL=jdbc:mysql://hotelga_server-mysql:3306/hotelga_server?useUnicode=true&characterEncoding=utf8&useSSL=false
+      - SPRING_DATASOURCE_URL=jdbc:mysql://wmes_server-mysql:3306/wmes_server_dev?useUnicode=true&characterEncoding=utf8&useSSL=false
       - JHIPSTER_SLEEP=30 # gives time for other services to boot before the application
     ports:
       - 8080:8080
-  hotelga_server-mysql:
+  wmes_server-mysql:
     extends:
       file: mysql.yml
-      service: hotelga_server-mysql
+      service: wmes_server-mysql
