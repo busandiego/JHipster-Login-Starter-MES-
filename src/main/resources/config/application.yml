@@ -57,7 +57,7 @@ management:
 
 spring:
   application:
-    name: hotelga_server
+    name: wmes_server
   profiles:
     # The commented value for `active` can be replaced with valid Spring profiles to load.
     # Otherwise, it will be filled in by gradle when building the JAR file
@@ -87,13 +87,13 @@ spring:
       enabled: false
   task:
     execution:
-      thread-name-prefix: hotelga-server-task-
+      thread-name-prefix: wmes-server-task-
       pool:
         core-size: 2
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: hotelga-server-scheduling-
+      thread-name-prefix: wmes-server-scheduling-
       pool:
         size: 2
   thymeleaf:
@@ -139,7 +139,7 @@ info:
 
 jhipster:
   clientApp:
-    name: 'hotelgaServerApp'
+    name: 'WmesServerApp'
   # By default CORS is disabled. Uncomment to enable.
   # cors:
   #     allowed-origins: "*"
@@ -149,11 +149,11 @@ jhipster:
   #     allow-credentials: true
   #     max-age: 1800
   mail:
-    from: hotelga_server@localhost
+    from: wmes_server@localhost
   swagger:
     default-include-pattern: /api/.*
-    title: hotelga_server API
-    description: hotelga_server API documentation
+    title: wmes_server API
+    description: wmes_server API documentation
     version: 0.0.1
     terms-of-service-url:
     contact-name:
