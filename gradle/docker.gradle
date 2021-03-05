@@ -3,7 +3,7 @@ jib {
         image = "adoptopenjdk:11-jre-hotspot"
     }
     to {
-        image = "hotelga_server:latest"
+        image = "wmes_server:latest"
     }
     container {
         entrypoint = ["bash", "-c", "chmod +x /entrypoint.sh && sync && /entrypoint.sh"]
