@@ -92,7 +92,7 @@ if (OperatingSystem.current().isWindows()) {
 defaultTasks "bootRun"
 
 springBoot {
-    mainClassName = "com.appserver.WmesServerApp"
+    mainClassName = "com.wmes.appserver.WmesServerApp"
 }
 
 test {

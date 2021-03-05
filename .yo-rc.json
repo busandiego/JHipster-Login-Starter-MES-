@@ -9,7 +9,7 @@
     "baseName": "hotelga_server",
     "packageName": "com.hotelga.appserver",
     "packageFolder": "com/hotelga/appserver",
-    "serverPort": "8080",
+    "serverPort": "8889",
     "authenticationType": "jwt",
     "cacheProvider": "ehcache",
     "enableHibernateCache": true,
