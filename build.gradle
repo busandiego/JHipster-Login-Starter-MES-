@@ -29,7 +29,7 @@ plugins {
     //jhipster-needle-gradle-plugins - JHipster will add additional gradle plugins here
 }
 
-group = "com.hotelga.appserver"
+group = "com.wmes.appserver"
 version = "0.0.1-SNAPSHOT"
 
 description = ""
@@ -92,7 +92,7 @@ if (OperatingSystem.current().isWindows()) {
 defaultTasks "bootRun"
 
 springBoot {
-    mainClassName = "com.hotelga.appserver.HotelgaServerApp"
+    mainClassName = "com.appserver.WmesServerApp"
 }
 
 test {
