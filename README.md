@@ -1,3 +1,3 @@
-# hotelga_server
+# wmes_server
 
-호텔가 통합 서버
+WMES 서버
