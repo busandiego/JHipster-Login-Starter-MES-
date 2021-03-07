@@ -56,10 +56,13 @@ public class TokenProvider implements InitializingBean {
         // 토큰 시간 설정
         this.key = Keys.hmacShaKeyFor(keyBytes);
         this.tokenValidityInMilliseconds =
-            1000 * jHipsterProperties.getSecurity().getAuthentication().getJwt().getTokenValidityInSeconds();
+            20 * jHipsterProperties.getSecurity().getAuthentication().getJwt().getTokenValidityInSeconds();
         this.tokenValidityInMillisecondsForRememberMe =
-            1000 * jHipsterProperties.getSecurity().getAuthentication().getJwt()
+            10 * jHipsterProperties.getSecurity().getAuthentication().getJwt()
                 .getTokenValidityInSecondsForRememberMe();
+
+        System.out.println("this.tokenValidityInMilliseconds값 : " + this.tokenValidityInMilliseconds);
+        System.out.println("this.tokenValidityInMillisecondsForRememberMe값 : " + this.tokenValidityInMillisecondsForRememberMe);
     }
 
     public String createToken(Authentication authentication, boolean rememberMe) {
@@ -75,7 +78,7 @@ public class TokenProvider implements InitializingBean {
         } else {
             validity = new Date(now + this.tokenValidityInMilliseconds);
         }
-
+        System.out.println("validity 시간: " + validity);
         return Jwts.builder()
             .setSubject(authentication.getName())
             .claim(AUTHORITIES_KEY, authorities)
