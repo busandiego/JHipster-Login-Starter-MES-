@@ -1,0 +1,62 @@
+{
+    "name": "Business",
+    "fields": [
+        {
+            "fieldName": "businessName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "businessRepresentative",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "businessRegistrationNum",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "businessContactNum",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "businessType",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "businessAddress",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "businessCategory",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "businessFaxNum",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isHeadquarter",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "createdDate",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20210308074430",
+    "entityTableName": "business",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
