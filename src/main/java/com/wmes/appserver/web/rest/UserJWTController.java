@@ -63,7 +63,7 @@ public class UserJWTController {
             this.idToken = idToken;
         }
 
-        @JsonProperty("id_token")
+        @JsonProperty("jwtToken")
         String getIdToken() {
             return idToken;
         }
