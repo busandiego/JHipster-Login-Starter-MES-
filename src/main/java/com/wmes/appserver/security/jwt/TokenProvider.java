@@ -5,6 +5,8 @@ import java.security.Key;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import com.wmes.appserver.domain.AdminUser;
+import com.wmes.appserver.repository.AdminUserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.InitializingBean;
@@ -93,9 +95,14 @@ public class TokenProvider implements InitializingBean {
             .parseClaimsJws(token)
             .getBody();
 
+        //AdminUser adminUser = AdminUserRepository.
+
         Collection<? extends GrantedAuthority> authorities =
+
             Arrays.stream(claims.get(AUTHORITIES_KEY).toString().split(","))
-                .map(SimpleGrantedAuthority::new)
+                // SimpleGrantedAuthority::new
+
+                .map(role -> new SimpleGrantedAuthority("ADMIN"))
                 .collect(Collectors.toList());
 
         User principal = new User(claims.getSubject(), "", authorities);

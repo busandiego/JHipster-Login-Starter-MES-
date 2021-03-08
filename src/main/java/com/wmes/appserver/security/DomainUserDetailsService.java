@@ -107,12 +107,12 @@ public class DomainUserDetailsService implements UserDetailsService {
             throw new UserNotActivatedException("User " + lowercaseLogin + " was not activated");
         }*/
         List<GrantedAuthority> grantedAuthorities = user.getAuths().stream()
-            .map(roles -> new SimpleGrantedAuthority(roles.getName()))
+            .map(roles -> new SimpleGrantedAuthority("ADMIN"))
             .collect(Collectors.toList());
         List<GrantedAuthority> grantedAuthorities1 = new ArrayList<>();
-        List<GrantedAuthority> grantedAuthorities2 = user.getAuths().stream()
-            .map(auths -> new SimpleGrantedAuthority(auths.getName()))
-            .collect(Collectors.toList());
+//        List<GrantedAuthority> grantedAuthorities2 = user.getAuths().stream()
+//            .map(auths -> new SimpleGrantedAuthority(auths.getName()))
+//            .collect(Collectors.toList());
         return new org.springframework.security.core.userdetails.User(user.getAdminLoginId(),
             user.getAdminPassword(),
             grantedAuthorities);
