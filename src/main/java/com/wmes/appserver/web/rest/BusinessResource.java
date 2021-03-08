@@ -1,6 +1,6 @@
 package com.wmes.appserver.web.rest;
 
-import com.wmes.appserver.domain.Business;
+import com.wmes.appserver.domain.standard.Business;
 import com.wmes.appserver.repository.BusinessRepository;
 import com.wmes.appserver.web.rest.errors.BadRequestAlertException;
 
@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * REST controller for managing {@link com.wmes.appserver.domain.Business}.
+ * REST controller for managing {@link Business}.
  */
 @RestController
 @RequestMapping("/api")

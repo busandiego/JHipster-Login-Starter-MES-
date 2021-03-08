@@ -1,4 +1,4 @@
-package com.wmes.appserver.domain;
+package com.wmes.appserver.domain.standard;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 

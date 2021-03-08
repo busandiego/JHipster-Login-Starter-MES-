@@ -1,5 +1,6 @@
 package com.wmes.appserver.config;
 
+import com.wmes.appserver.domain.standard.Business;
 import io.github.jhipster.config.JHipsterProperties;
 import org.ehcache.config.builders.CacheConfigurationBuilder;
 import org.ehcache.config.builders.ExpiryPolicyBuilder;
@@ -75,7 +76,7 @@ public class CacheConfiguration {
             createCache(cm, com.wmes.appserver.domain.Category.class.getName());
             createCache(cm, com.wmes.appserver.domain.AdminHistories.class.getName());
             createCache(cm, com.wmes.appserver.domain.AdminUser.class.getName() + ".InviteRequestHistories");
-            createCache(cm, com.wmes.appserver.domain.Business.class.getName());
+            createCache(cm, Business.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

@@ -1,7 +1,7 @@
 package com.wmes.appserver.web.rest;
 
 import com.wmes.appserver.WmesServerApp;
-import com.wmes.appserver.domain.Business;
+import com.wmes.appserver.domain.standard.Business;
 import com.wmes.appserver.repository.BusinessRepository;
 import com.wmes.appserver.web.rest.errors.ExceptionTranslator;
 
@@ -253,7 +253,7 @@ public class BusinessResourceIT {
             .andExpect(jsonPath("$.[*].isHeadquarter").value(hasItem(DEFAULT_IS_HEADQUARTER.booleanValue())))
             .andExpect(jsonPath("$.[*].createdDate").value(hasItem(sameInstant(DEFAULT_CREATED_DATE))));
     }
-    
+
     @Test
     @Transactional
     public void getBusiness() throws Exception {
