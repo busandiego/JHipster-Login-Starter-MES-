@@ -37,6 +37,7 @@ import ApplyInviteCardService from '@/entities/apply-invite-card/apply-invite-ca
 import ReservationService from '@/entities/reservation/reservation.service';
 import PaymentService from '@/entities/payment/payment.service';
 import AccommodationSalesService from '@/entities/accommodation-sales/accommodation-sales.service';
+import BusinessService from '@/entities/business/business.service';
 // jhipster-needle-add-entity-service-to-main-import - JHipster will import entities services here
 
 Vue.config.productionTip = false;
@@ -106,6 +107,7 @@ new Vue({
     reservationService: () => new ReservationService(),
     paymentService: () => new PaymentService(),
     accommodationSalesService: () => new AccommodationSalesService(),
+    businessService: () => new BusinessService(),
     // jhipster-needle-add-entity-service-to-main - JHipster will import entities services here
     accountService: () => accountService
   },

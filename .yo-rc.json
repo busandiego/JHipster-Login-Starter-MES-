@@ -1,14 +1,14 @@
 {
   "generator-jhipster": {
     "promptValues": {
-      "packageName": "com.hotelga.appserver",
+      "packageName": "com.wmes.appserver",
       "nativeLanguage": "ko"
     },
     "jhipsterVersion": "6.4.1",
     "applicationType": "monolith",
-    "baseName": "hotelga_server",
-    "packageName": "com.hotelga.appserver",
-    "packageFolder": "com/hotelga/appserver",
+    "baseName": "wmes_server",
+    "packageName": "com.wmes.appserver",
+    "packageFolder": "com/wmes/appserver",
     "serverPort": "8889",
     "authenticationType": "jwt",
     "cacheProvider": "ehcache",
@@ -48,7 +48,7 @@
   "generator-jhipster-vuejs": {
     "jhipsterVersion": "6.4.1",
     "applicationType": "monolith",
-    "baseName": "hotelga_server",
+    "baseName": "wmes_server",
     "useSass": true,
     "clientPackageManager": "npm",
     "clientFramework": "vue",

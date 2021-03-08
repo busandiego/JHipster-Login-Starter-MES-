@@ -1,7 +1,7 @@
 {
-  "name": "hotelga-server",
+  "name": "wmes-server",
   "version": "0.0.0",
-  "description": "Description for hotelga_server",
+  "description": "Description for wmes_server",
   "private": true,
   "license": "UNLICENSED",
   "cacheDirectories": [

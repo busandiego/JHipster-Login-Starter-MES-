@@ -97,6 +97,12 @@ const AccommodationSales = () => import('../entities/accommodation-sales/accommo
 const AccommodationSalesUpdate = () => import('../entities/accommodation-sales/accommodation-sales-update.vue');
 // prettier-ignore
 const AccommodationSalesDetails = () => import('../entities/accommodation-sales/accommodation-sales-details.vue');
+// prettier-ignore
+const Business = () => import('../entities/business/business.vue');
+// prettier-ignore
+const BusinessUpdate = () => import('../entities/business/business-update.vue');
+// prettier-ignore
+const BusinessDetails = () => import('../entities/business/business-details.vue');
 // jhipster-needle-add-entity-to-router-import - JHipster will import entities to the router here
 
 Vue.use(Router);
@@ -512,6 +518,31 @@ export default new Router({
       path: '/entity/accommodation-sales/:accommodationSalesId/view',
       name: 'AccommodationSalesView',
       component: AccommodationSalesDetails,
+      meta: { authorities: ['ROLE_USER'] }
+    }
+    ,
+    {
+      path: '/entity/business',
+      name: 'Business',
+      component: Business,
+      meta: { authorities: ['ROLE_USER'] }
+    },
+    {
+      path: '/entity/business/new',
+      name: 'BusinessCreate',
+      component: BusinessUpdate,
+      meta: { authorities: ['ROLE_USER'] }
+    },
+    {
+      path: '/entity/business/:businessId/edit',
+      name: 'BusinessEdit',
+      component: BusinessUpdate,
+      meta: { authorities: ['ROLE_USER'] }
+    },
+    {
+      path: '/entity/business/:businessId/view',
+      name: 'BusinessView',
+      component: BusinessDetails,
       meta: { authorities: ['ROLE_USER'] }
     }
     // jhipster-needle-add-entity-to-router - JHipster will add entities to the router here

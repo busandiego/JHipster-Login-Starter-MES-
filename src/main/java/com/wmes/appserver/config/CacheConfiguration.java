@@ -75,6 +75,7 @@ public class CacheConfiguration {
             createCache(cm, com.wmes.appserver.domain.Category.class.getName());
             createCache(cm, com.wmes.appserver.domain.AdminHistories.class.getName());
             createCache(cm, com.wmes.appserver.domain.AdminUser.class.getName() + ".InviteRequestHistories");
+            createCache(cm, com.wmes.appserver.domain.Business.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

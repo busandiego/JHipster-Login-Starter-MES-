@@ -1,0 +1,14 @@
+entity Business {
+	businessName String required,
+    businessRepresentative String required,
+    businessRegistrationNum String,
+    businessContactNum String,
+    businessType String,
+    businessAddress String,
+    businessCategory String,
+    businessType String,
+    businessFaxNum String,
+    isHeadquarter Boolean,
+    createdDate ZonedDateTime
+
+}
