@@ -74,6 +74,13 @@ spring:
 server:
   port: 8889
 
+#server-url:
+#    api-path: 112.217.78.93:8889
+#    scheme: http
+#    host: http://112.217.78.93:8889
+#    port: 80
+
+
 # ===================================================================
 # JHipster specific properties
 #

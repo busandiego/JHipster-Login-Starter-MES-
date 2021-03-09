@@ -1,4 +1,5 @@
 package com.wmes.appserver.domain;
+
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
@@ -39,11 +40,18 @@ public class Business implements Serializable {
     @Column(name = "business_type")
     private String businessType;
 
-    @Column(name = "business_address")
-    private String businessAddress;
 
     @Column(name = "business_category")
     private String businessCategory;
+
+    @Column(name = "business_zipcode")
+    private String businessZipcode;
+    @Column(name = "business_address")
+    private String businessAddress;
+
+    @Column(name = "business_detail_address")
+    private String businessDetailAddress;
+
 
     @Column(name = "business_fax_num")
     private String businessFaxNum;
@@ -141,6 +149,22 @@ public class Business implements Serializable {
         this.businessAddress = businessAddress;
     }
 
+    public String getBusinessZipcode() {
+        return businessZipcode;
+    }
+
+    public void setBusinessZipcode(String businessZipcode) {
+        this.businessZipcode = businessZipcode;
+    }
+
+    public String getBusinessDetailAddress() {
+        return businessDetailAddress;
+    }
+
+    public void setBusinessDetailAddress(String businessDetailAddress) {
+        this.businessDetailAddress = businessDetailAddress;
+    }
+
     public String getBusinessCategory() {
         return businessCategory;
     }
@@ -219,7 +243,9 @@ public class Business implements Serializable {
             ", businessRegistrationNum='" + getBusinessRegistrationNum() + "'" +
             ", businessContactNum='" + getBusinessContactNum() + "'" +
             ", businessType='" + getBusinessType() + "'" +
+            ", businessZipcode='" + getBusinessZipcode() + "'" +
             ", businessAddress='" + getBusinessAddress() + "'" +
+            ", businessDetailAddress='" + getBusinessDetailAddress() + "'" +
             ", businessCategory='" + getBusinessCategory() + "'" +
             ", businessFaxNum='" + getBusinessFaxNum() + "'" +
             ", isHeadquarter='" + isIsHeadquarter() + "'" +

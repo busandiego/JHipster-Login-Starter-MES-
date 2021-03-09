@@ -23,9 +23,7 @@ public class LoggingConfiguration {
                                 @Value("${server.port}") String serverPort,
                                 JHipsterProperties jHipsterProperties,
                                 ObjectMapper mapper) throws JsonProcessingException {
-
         LoggerContext context = (LoggerContext) LoggerFactory.getILoggerFactory();
-
         Map<String, String> map = new HashMap<>();
         map.put("app_name", appName);
         map.put("app_port", serverPort);
