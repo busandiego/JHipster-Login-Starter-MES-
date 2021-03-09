@@ -1,6 +1,7 @@
 package com.wmes.appserver.web.rest;
 
-import com.wmes.appserver.domain.standard.Business;
+import com.wmes.appserver.domain.Business;
+
 import com.wmes.appserver.repository.BusinessRepository;
 import com.wmes.appserver.web.rest.errors.BadRequestAlertException;
 

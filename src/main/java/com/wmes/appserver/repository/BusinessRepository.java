@@ -1,5 +1,6 @@
 package com.wmes.appserver.repository;
-import com.wmes.appserver.domain.standard.Business;
+
+import com.wmes.appserver.domain.Business;
 import org.springframework.data.jpa.repository.*;
 import org.springframework.stereotype.Repository;
 
